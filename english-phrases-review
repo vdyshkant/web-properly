@@ -1,0 +1,1478 @@
+
+
+
+
+tedious to write 	// скучно писать
+innocent enough		// достаточно невинно
+the ins and outs 	// входы и выходы
+circumstances		// обстоятельства
+to hand a value 	// перадать значение
+still have room		// по-прежнему есть место
+consecutive positions	//последовательные позиции
+succinct
+subsequent access  // последующий доступ
+constructor objects
+instance
+People toss around
+broad support
+Acknowledgments
+Supplemental material
+tip, suggestion, or general note
+a warning or caution
+folks
+querying capabilitiy
+Malleable
+solid foundations
+All Blown Up
+overlap
+loosely defined
+grand
+connected bubbles
+more of a spirograph than distinct
+intersections // пересечения
+likely
+is likely
+less exciting part
+purpose
+For the sake of simplicity
+the sections for Firefox-etc will merely familiarize you with the UI for each browser’s debugger and point out any differences.
+Before delving into the various debuggers
+the most common
+to catalog
+execute statements
+step through code
+you can halt the execution
+due to the lack of decent development tools
+is traditionally looked upon as a difficult language
+For your convenience, the following code listing highlights the key changes:
+ a set of form fields
+more gracefully
+you can determine whether the error is based on user input
+to take over
+code that breaches
+character
+Back to the code at hand
+mark out
+defines
+a circumstance that is extraordinary and unpredictable
+occurs
+can be dealt with as you wish
+clause
+sort of exceptional circumstance
+determine
+intruders
+that relies
+problems may arise that you can do nothing about
+a syntax or logic error in sight
+dud data
+stating the obvious
+in the first place
+relying
+Conditions beyond your control can lead to errors
+keep the following points in mind
+It’s surprising how often this error crops up
+the error message this type of mistake causes can be misleading
+Spot it
+there’s a deliberate concatenation mistake
+deliberate
+straightforward
+Ordinarily
+will attempt to treat
+To perhaps confuse the issue
+we intended
+as such
+it’s supposed to be
+examine the following code
+worth checking
+embedded
+Hence
+Consider the following code:
+a deliberate mistake
+On first glance
+The third fault
+your only clue
+with that error cleared up
+in an oblique way
+consequence
+implicitly
+explicitly
+a briefer look
+to step through your code
+how you can cope with
+so that you won’t make them so often
+annoying typos
+in particular
+extra effort
+maintainable
+to obtain
+provides  // предоставляет, обеспечивает
+native reference types
+vital
+Frankly, it’s a question you don’t have to worry about at this point in time. It’s more important to know how to create objects than using the correct approach.
+instance data
+—they’re shared
+to assume
+efficient
+provide
+absence
+instances
+objects discussed thus far in this chapter
+to point out
+provide
+interchangeably
+distinction
+definition
+an actual
+custom
+plain objects
+You somewhat did this
+you need to provide blueprints
+how it should be laid out
+your own specification, to fit your specific needs
+you can just move on in
+you may want to move on
+absence
+colon
+enclose
+Admittedly
+defining the entire object
+to use in place
+in and of themselves
+except
+accidentally misspell
+drawbacks
+issue
+in conjunction
+unwieldy
+time boundary
+whether this is
+The date of the month
+As you will have guessed
+the number that precedes it
+so no adjustment is needed
+populate it
+for convenience
+It’s unlikely
+handles everything to do with
+rather an odd amount
+sales tax
+attempts
+will lead JavaScript to assume, quite rightly
+This example is just that—an example
+can often prove very useful
+just under
+mimic
+chops off any numbers after the decimal point
+To aid you
+Essentially
+premise
+perform
+purpose
+As its name implies
+redefines
+criterion
+Let’s assume
+keep straight
+determines
+mandatory arguments
+values 1 through 5
+just about
+at the very end
+neither of these values,
+conjunction
+no prizes for guessing
+reverse
+descending
+what would happen if you altered the number
+you know in advance t
+sequence
+If you were to use
+rather
+an exhaustive look
+provide
+commonly
+dependent
+scrubbing
+it’s always best to assume user input is incorrect, and it’s your job to make it correct
+Removing Leading and Trailing Whitespace
+instead
+efficient
+in turn
+The next chunk
+at all
+You might wonder why you bother
+In either case
+shorthand way
+object is disposed of
+it appears
+This probably seems a bit weird at first
+retains
+internal understanding
+respective character
+don’t let this mislead you
+retrieve
+onward
+toward to end
+whereas
+best to be very aware
+so easy to make
+very common
+will complain
+You might be wondering
+trivia quiz
+substring
+further
+means
+provide
+the trickier
+less complex
+vast
+Using this technique is preferable
+more commonly used ones
+assume
+helps you out
+in favor
+related properties
+Now that you have seen
+so that you can achieve more with your code
+This is where objects come in
+obviously
+This way of working out
+to compensate
+evaluate
+consider
+at first glance
+departure time
+to clarify things a little
+is fairly easy to deal with
+actual data
+a brick wall
+body-shape
+dipstick (for oil)
+change the gear
+beep the horn
+a blue car with four-wheel drive
+to name just a few!
+a slightly scarier way
+in particular
+Not only does
+simplify
+expands immensely
+when you make full use
+we have to break it to you
+is central to
+Defining custom reference types
+if you so wish
+remainder
+Everything from now on
+you concluded your look at
+Although
+appropriate
+as is
+Admittedly
+supplied value
+precious time
+replicate
+it’s perfectly valid
+So now that you understand
+seemingly
+Lookup
+Every so often
+unless
+retain
+Therefore
+consider
+boil down - сводится к тому
+throughout
+In practice, you want to avoid creating global variables and functions because they can be easily and unintentionally modified
+thus
+it’s imperative that you understand
+even more so in
+put simply
+extent
+this leads neatly to the next topic of this chapter—scope
+a subtle point
+which provides
+You should be pretty familiar
+are passed
+Have a go at
+comes across
+explicitly
+Usually
+in order to
+meaningful
+As you work your way through the book
+perform
+handy
+encapsulate
+prematurely
+defined by being in curly braces
+on a course of action to follow
+is similar to 0 in that it stops
+altogether
+prematurely
+it’s best avoided unless really necessary
+fairly rare;
+regardless
+despite
+deliberate
+remain
+Leaving this line out
+Suppose
+eventually
+whereas
+equally well
+conventional
+prior to the loop
+code extract
+loop through
+However, there is no reason why you can’t use fractional numbers, although it’s much less common to do so
+a dual purpose
+remains
+another execution of the loop code is performed
+statement.
+After the for statement comes the block of code
+To keep track
+makeup
+come in handy
+The code needed for plotting each point will most likely be the same
+you want to plot these on a graph.
+despite the instructions
+encompassing
+simply
+integer value
+leave it out
+as the name suggests
+underneath
+would commence
+namely
+efficient alternative
+How does he deal with this?
+so you have a few traps to watch out for
+they work just as well
+end up
+statement, which catches the situation in which the value of 0 did not trigger 1 in any of the earlier 2 conditions
+Failing that
+therefore
+otherwise
+provides
+You can achieve
+Instead
+is often
+unless you have a particularly tricky condition to evaluate
+almost
+the easiest way to approach understanding
+logical chunks
+We did so simply for demonstration purposes
+does not actually evaluate
+Thus
+themselves
+Let’s break down the condition into its component parts
+is similar to that of the first statement
+an overall result
+two halves
+The question posed by
+substituting your particular value
+You’ll substitute
+evaluate
+The easiest way to work out
+You look at each in detail in turn
+could be rewritten
+are strung
+he offers
+verbose
+inner
+outer
+nested
+The condition being evaluated is whether we're hot // или нам жарко
+If I’m not hot
+is not evaluated
+Otherwise
+doesn’t even bother
+it’s worth noting that
+circumstance
+results in another boolean value
+Recall
+with plenty
+bitwise operators
+implicitly
+Worse still
+you evaluate
+will be skipped over
+how did this alter the statement
+When trying out the example,
+a good practice to get into
+indented
+Also worth noting is the fact
+neither
+to leave them out
+you’ll be less likely
+regardless
+being executed
+particularly
+equally as well
+as belonging
+purpose
+The code to be executed if the condition
+follows the keyword
+almost
+the ease
+outcome
+on either side
+circumstances
+an order of precedence
+the more useful of which are summarized
+statement
+Recall
+depending on whether a particular condition is met.
+a certain course of action
+smarter
+it’s far from
+Validation of user input is probably one of the most common uses
+obtained
+information gathered
+capability
+appearance
+That is to say
+perform calculations
+in a descriptive sentence
+Attempting to
+on some occasions you need to force the conversion of data
+means of storing data
+You must match
+In particular
+That’s it
+This is getting out of hand
+rarely, if ever
+
+confusing
+storing it
+is very much the same
+indices
+You just state
+one dimension
+a neater solution
+the corresponding
+sequentially
+Suppose
+A Multi-Dimensional Array
+Take each addition to the array in turn
+Take each addition
+flexible
+the latter
+Obviously
+preceding
+remainder
+declaring
+slightly
+to say up front
+Confusing, but you’ll soon get used to this
+and so on
+after all, we humans tend to say the first item of data
+distinguish
+you could use
+invaluable
+whereas
+whether
+the possible confusion
+has enough sense to make data type conversions like this whenever it needs to
+decimal
+could encounter
+determines
+radix
+You could just
+is considered to be part of the allowable number
+decimal
+fractional numbers
+integer
+it assumes
+To add to the possible confusion
+Consider
+even though
+This is especially likely
+you may be given
+yourself.
+Usually
+whenever it needs to,
+enough sense
+then concatenates the two
+the sensible choice
+sophisticated
+Something to be aware of
+instead.
+it does a lookup
+to spot
+the escape sequence
+realizes
+an expression
+along with the
+rather
+is intelligent enough
+wrapped around it
+A prime example
+the value of this expression will be as follows
+you now make use of
+much as you do the black
+if you left this out
+adds them up
+Recall that when applied to numbers
+as well as
+That concludes a brief look a
+this equates to
+This raises
+(approximately).
+implicitly
+the equation
+solely for reference
+how to spot invalid characters posing as numeric data
+it’s still a fairly simple example
+Centigrade is another name for the Celsius temperature scale.
+a slightly more complex example
+The same applies
+it always gets left until last
+finishes off
+Doesn’t JavaScript add up right?
+So what gives
+might
+they get dealt with sooner
+operator Precedence
+use this operator as a shortcut for increasing the value
+therefore,
+such subtlety can easily be overlooked and lead to bugs in code
+is incremented by one first, then times 10 and plus 1
+So the equation reads
+It’s a subtle difference
+as they usually are
+are used on their own
+a poke in the eye
+you may well be thinking that
+When you are familiar
+involving its previous value
+which are represented by two plus signs
+are so commonly used
+familiar
+though admittedly just one calculation won’t tax it too much
+After all
+the more calculations you force JavaScript to do
+literal values (actual values, such as 15 / 10),
+which was set to 15
+expressions in places
+almost never
+a succession
+In actual fact
+perform
+forward slash (/), respectively
+JavaScript has a range of basic mathematical capabilities, such as addition, subtraction, multiplication, and division.
+capabilities,
+number-crunching and text-based operations
+obtained
+gain
+to figure out how much would be left over
+deduct
+add up
+—so just why would you want to use variables at all
+so far
+whereas
+then you set
+remains unaffected
+respectively
+easily
+Assigning Variables with the Value of Other Variables
+contents
+may not occur until another page is loaded
+as efficient as it should be
+until eventually the computer would run out and the system would grind to a halt
+eventually
+consumed
+allocate
+is freed up
+Almost anywhere that you can use
+almost
+literal
+However
+an actual primitive value
+odd
+actual data
+Currently
+assignment operator
+assigning values
+declared
+instead
+warns
+as long as
+consistently
+it’s best to stick with one of them
+to slip into your code
+elsewhere
+so that you can refer to it
+unless
+variables are lost
+to store and retrieve the data
+are held in the computer’s memory
+unlike
+data that can be altered, or varied
+variable.
+in several stages
+suppose you also provide a facility for increasing loan repayments to pay off the loan early
+how much she owes
+how much is still outstanding on this loan
+loan
+However
+permanent store
+temporarily
+You take a more detailed look
+decision-making abilities.
+based on whether the answer is true or false
+false
+hopefully
+The purpose
+commonplace
+The least obvious of these is the last
+character set
+hexadecimal //ˌheksəˈdes(ə)məl
+escape sequences
+in conjunction with
+still applies
+falls over wondering
+as marking
+that is // то есть
+neither is / neither
+recognize
+simply by enclosing it inside quotation marks
+text is to be treated as text
+generally
+It kindly hides
+unless
+Fractional numbers
+span
+boolean.
+numerical,
+some of the more commonly used data types
+The things that you can do with data and the results you’ll get depend on the type of data being used, even if you don’t explicitly specify what type it is
+what sort of data type you intended
+explicit
+on occasion
+Why not just cut to the chase
+Furthermore
+JavaScript will work that out for itself
+a lot more forgiving about how you use different types of data
+is a weakly typed language
+applicable to its type
+you need to explicitly state what sort of data you are dealing with
+whenever
+recognize
+various types
+to mention just a few
+information is obtained directly without being processed
+filter out
+retrieve
+related files
+Representing data in code
+Its existence is marked out by the
+along
+is embedded
+more extensive tools will prove valuable once you get more experience
+Unlike
+upon
+In particular, this brief introduction covered the following:
+it only uses features available in older browsers
+You could make sure your code is backward compatible
+you need to somehow deal with older browsers
+standards-compliant browsers
+really comes down to
+browser creators are complying with standards
+to a much greater extent than ever before
+Each new release of any browser sees new and exciting features
+it’s not always the case that the property
+cross-browser compatible
+regardless // несмотря на
+preceding example
+the code would be attempting to access a paragraph before it existed in the page
+Otherwise
+It’s important in that the code accessing the paragraph is after the actual  <p/>  element
+You’ll notice
+This proves more useful
+is particularly low
+is just that
+by means of
+Another important point raised by this example
+Parsing is brought to a halt
+the browser carries on parsing down
+to be given
+In particular
+processes it
+certain tasks
+recognizes
+solely for your benefit
+being displayed
+The browser halts it's parsing
+the web page flow
+let you dip your toes into the JavaScript waters
+Moreover
+the preceding line
+you look at it in greater depth
+reference
+for the purpose of
+is treated
+convenient place
+So much easier
+at some point
+probably // вероятно
+rather // скорее
+that performs
+reuse // повторное использование
+beware - остерегаться
+is common when incorporating - является общей тенденцией при включении
+However - однако
+Generally - как правило
+Therefore - следовательно
+must be accompanied - должен сопровождаться
+easier for you to work out
+Though it’s not compulsory
+the capability to specify
+element has another arrow in its quiver
+assume - предполагать, допускать
+to omit - опустить (пропустить)
+and so is considered bad practice
+when the browser spots tags - когда браузер видит теги
+Basically - в основном
+chunk
+but rather script code to be processed - а скорее код сценария для обработки
+is much like
+start on - начать
+Wherever a piece of code does not work on any of these browsers, a note to this effect is made in the text.
+differences exist in how they view web pages and treat JavaScript code
+you take an in-depth look
+as it’s running
+though when our programs go wrong, we prefer to call them “unexpected additional features.”
+spot and solve errors
+increasing complexity - возрастающая сложность
+equally good
+more proficient - более умелый/опытый
+that is beyond a tool’s capability
+attempt
+the more advanced logic
+rather than rely
+specifically aimed
+evaluation
+how to obtain them
+full-fledged productivity software
+conventional desktop applications
+rival the speed
+conventional
+advances - достижения
+such as a number for his age rather than text
+in preparation
+user input validation and enhancement
+That’s a rather broad statement,
+primarily
+On the Internet, // http://english.stackexchange.com/questions/4419/in-the-internet-vs-on-the-internet
+These consist of four sets of numbers
+instead
+The shopkeeper serves the customer by reaching for the item requested
+majority
+appendices
+Initially, you’ll look at the essentials before the more advanced stuff
+in particular hosts
+developers still have to cope with older
+is certainly more unified than it has ever been, - является, конечно, более унифицированным, чем раньше/ранее/до этого
+really took off - действительно взлетел
+Initially - вначале, первоначально
+interchangeably - взаимозаменяемые
+surprisingly powerful - удивительно мощный
+Particularly - особенно
+a good place to dispel a widespread myth - хорошее место, чтобы развеять распространённый миф
+Perhaps - возможно
+as much as you like - так много, сколько вам нравится
+hence - следовательно
+occasions - случаи
+This is pretty much - это, в значительной степени
+pour water into cup - налить..
+works out what action you want it to take - определяет (разбирается), какие действия вы хотите ему делегировать
+are processed from the top line downward - обрабатываются от верхней линии к нижней
+what is termed - то, что называется
+wide variety - широкое разнообразие
+Put simply - проще говоря
+you are probably already well aware - вам, вероятно, уже хорошо известно
+Having bought - купив
+useful - полезный, пригодный
+a brief look - краткий обзор
+
+eligible
+I worked with Meteor in its infancy.
+Knowledge about one will give you insights that make you better at the other.
+If you like Mongo and CoffeeScript, Meteor is a darn good idea.
+
+how they simplify many programming tasks for you
+expands immensely
+when you make full use of these objects
+and therefore most of what you do involves manipulating objects
+is an object‐based
+First, we have to break it to you
+Defining custom reference types
+Creating custom objects to represent complex ideas and data
+When you're ready, head on to the next lesson
+Feel free
+At this rate, you'll have your own game company in no time.
+Now let's spice things up with some logical operators
+This helps eliminate problems that might crop up if your program tests for 'YES'
+This helps eliminate problems
+You may have noticed us use the 555
+we can use the user's response to influence what the program does
+You live to stroll through the forest another day
+You got away barely
+Did you get a head start?
+Let's book it
+You get whomped!
+You beat the troll--nice work!
+troll
+How courageous!
+minding you own business
+Head on to the next section
+Neat, right?
+Reviewed control flow syntax
+That last one was particularly tricky.
+
+nap
+It evaluates
+together all on your lonesome
+Now that you've added
+allows you to preset a number of options
+it might be annoying to type
+Sneak preview: the switch statement
+accidentally
+yet another string
+as well as learn about a fancy new function
+if a number is evenly divisible by another number
+since either you beat the dragon (and the slaying's over) or the dragon beat you!
+Either way
+a congratulatory message
+Great! Now we want to add a couple of branches to our program so it can handle different outcomes
+The dragon burninates you! You're toast.
+You slew the dragon
+how you fare against the dragon
+you’ll battle a dragon
+control flow statements  (like if/else)
+Your turn!
+It runs once because 777 tells it to
+will continue so long as the condition being evaluated is true
+When this is the case
+at least one time no matter what
+No restrictions on this one;
+In these cases, it's often a matter of preference.
+Next up
+that should do the trick
+You can do this however you like
+as well as
+from scratch
+We've written the less succinct version in the editorfrom scratch
+Get in the habit of typing exactly as much as you need to
+we don't bother
+Brevity is the soul of programming
+To prevent this from happening
+this simpler syntax should be a breeze for you.
+Since you've already mastered
+understands 1 to mean 999 and 55
+we didn't know ahead of time how many
+we keep flipping the coin as long as the coin turns up heads
+Tails! Done flipping
+Heads! Flipping again
+bit for now
+where you don't know in advance
+Say, for example, you wanted to keep choosing playing cards from a deck until you get a spade
+But what if you didn't know ahead of time when to stop
+While we're at it
+and move on to more JavaScript goodness
+Think about how you might fine-tune this program
+In the meantime
+think hard about when your loop should stop
+so it picks up
+iterator
+For instance
+You can treat
+Essentially
+Once you've got the hang of
+and so on and so forth // и так далее и тому подобное
+You have so many useful tricks up your sleeve
+But they are worth learning because they are really useful.
+Enjoy yourself while smashing through this coding!
+Beware
+We sugges
+Except now
+each time we loop over
+Small complication
+and we're done
+You have a great handle on
+This satisfies the condition
+It starts off with
+A more efficient way to code
+This has meant we
+The examples we've looked at have used 22+2
+We can now control where the for loop starts and ends. What about controlling what happens in between?
+determines that
+it does so by starting off where
+loop makes use of a counting variable
+Below
+But what you're probably really keen to do is write your own
+far less code
+more fancy things
+Subsequent exercises will
+
+we don't want to do boring, repetitive work!
+What if a user makes an inappropriate choice like 'dog'?
+Let's break the problem down a little.
+Now we consider the other scenarios.
+You're doing great!
+We carried over the code from the previous section, but it is a comment. Leave it there for now.
+When programming a game like this, you have to first figure out all the various outcomes
+estimated course time
+But there are three outcomes
+will determine who wins
+With your newly acquired knowledge of functions, let's go build a rock, paper, scissors game next.
+Hopefully you can see how powerful functions are
+Get some more shut eye!
+You're getting plenty of sleep! Maybe even too much!
+These can be very wordy, and a pain to type repeatedly.
+rectangle
+length
+You are a creature of habit
+See how lack of spacing makes debugging hard
+That just means figuring out what the heck went wrong with your code
+It helps the computer know where there are stopping points in the code
+The semi-colon acts like a period in a sentence
+Your reusable block of code follow this
+substituted
+parentheses
+The entire function ends with a semi-colon.
+a semi-colon
+curly brackets
+The computer will look out for it in the code block.
+Let's break down
+joining of strings is called concatenation
+It's a placeholder word that we give a specific value when we call the function
+capital letter
+and the convention is to use lowerCamelCase
+It is tedious to have to repeat to Jane the same 'bake' instructions every time.
+Mix all the ingredients in a bowl
+Pre-heat the oven at 300 degrees
+Let's briefly review
+efficiently
+That is incredibly impressive
+It is worthwhile asking your user for feedback!
+equal
+assignment
+I set a pace, so I can race without pacing.
+"You and Bieber start racing. It's neck and neck! You win by a shoelace!"
+The story heats up!
+is about to talk
+give them an encouraging message to play on!
+will hold the user's response
+involve
+conditional statements
+pat
+bring back
+pretend
+easily
+whether that is a number or a string
+swap in
+swap out
+make sure we really have it nailed down
+tricky
+chopping
+entire
+Substrings
+odd
+even
+There is nothing left over
+Consider
+divisibility
+remainder of that division
+to construct
+another example
+ground
+Mid-lesson breather
+literal
+Computers aren't that smart
+instead
+the order and punctuation matter
+Otherwise
+is made up of
+below
+log . printing out
+either
+above
+numerals
+as labels
+sequences of characters
+quantities
+Data
+keep track
+Programs can't yet
+Ponder these Two Rhetorical Questions
+sophisticated
+is not affiliated
+Nevertheless
+excellence
+battled-tested expertise
+an expert Modern Frontend Developer has intangibles, such as fortitude
+buttery smooth animations
+build apps for evergreen (new versions) and old browsers
+interest in Backbone.js is plummeting
+assignment
+probably
+spreadsheet
+interaction
+has many uses
+figure out
+others want to collaborate with you
+does not compute!
+
+What can we generalize so far?
+commonly used
+There are more commands you can use the master the command line
+path
+we specified
+switches you
+stands for
+as well
+probably already familiar
+root directory
+we refer to folders as directories
+is ready to take in
+there are a few commonly used commands to become familiar with
+you can get a clean slate for this exercise
+shell prompt
+
+flow
+regardless
+circumstances
+necessarily
+those
+is likely to suffer
+less exciting part
+codenamed
+folks
+it is made up
+to reveal
+lack a lot of features
+set
+directly inspired
+relied upon
+its toolset is relatively new to the browser
+gutter
+denoted
+are laid out much differently
+As you can tell from Figure
+but as with
+“gear” menu
+you can also bring up the development tools by clicking
+bring up
+being
+a suite of tools to ease our lives
+subsequent
+can prove very useful for tracking where you are
+very simple to follow
+eventually
+Yet another step takes you
+corresponding entry
+resides in
+Call Stack
+examine
+step over
+a little tedious
+to get the gist of the flow
+is up for execution
+Alter
+stepping
+to advance to
+impractical
+denotes
+straightforward
+You can pop it out
+For the sake of simplicity
+and point out any differences
+will merely familiarize you with
+Because of the universal nature
+The 12 Times Table // Таблица умножения
+
+Before delving
+entire
+Stepping
+may offer
+you can halt the execution
+is traditionally looked upon as a difficult language to write and debug due to the lack of decent development tools
+looked upon as a difficult
+remedying
+regardless
+actually sensible to do
+you can go further
+Indeed
+resides within
+For your convenience
+more gracefully
+to take over
+execution in its tracks
+Throwing Errors
+Back to the code at hand
+The aptly
+you mark out
+it means a circumstance that is extraordinary and unpredictable.
+work as a pair
+clause
+can be dealt
+in that sort of exceptional circumstance
+impossible to determine
+intruders
+caused an error due to the user being behind a particular type of firewall
+launching the board
+that relies on
+Things can still go wrong
+that confirms
+in sight
+That seems like stating the obvious
+in the first place
+when you are relying
+necessarily
+It’s surprising how often this error crops up
+can be misleading
+
+may arise
+in sight.
+mind your own business
+If users can enter dud data
+Thoroughly
+That seems like stating the obvious
+to stop them from occurring in the first place
+Conditions beyond your control
+Error Handling
+occur
+how often this error crops up
+misleading.
+deliberate
+straightforward
+Ordinarily,
+will attempt to treat it as one.
+To perhaps confuse the issue
+we intended
+examine the following code
+and Vice Versa
+is easily overlooked
+embedded in
+What makes things even trickier
+Hence
+Using Equals Rather than Equality
+Similarly
+a deliberate mistake
+you always need to be aware of case
+You might wonder why it’s there
+On first glance
+your only clue
+it’s quite likely
+so you can identify
+in an oblique way
+a major source
+can lead
+consequence
+explicitly
+implicitly
+when it comes
+is actually very easygoing
+a briefer look
+enables you to hunt for difficult bugs
+the contents
+to step through your code
+how you can cope
+arise
+In particular
+annoying typos
+Spotting common mistakes that everyone makes—even pros
+remains alive
+length
+private
+bits of code
+in the remainder
+belt
+foundations
+Everything from now on
+you concluded your look
+relatively simple
+and pass it the appropriate converter function
+Admittedly,
+the supplied value
+somewhat
+you will spend precious time finding
+if you replicated it
+It can also make it easier to introduce bugs that are difficult to find and fix
+It adds extra, and often unnecessary, complexity and confusion to your code
+it’s perfectly valid
+So now that you understand how scope works
+Consider the following
+handles this seemingly catastrophic event
+to make way
+whereby
+Every so often
+unless
+retain their value
+consider our standard
+but they all boil d the supplied
+valueown to creating variables and functions in functional scope
+unintentionally
+and thus its value is 20 everywhere it is used
+imperative
+extent
+Well, this leads neatly
+subtle point
+apart from the first
+You should be pretty familiar with how the code in the function works
+be defined
+you’d have to alter the function definition
+here just one piece
+you need to stick to the same rules for naming
+Have a go at creating your own functions now
+invoking
+Unlike
+frequently
+a bit like
+that do not explicitly return a value—
+curly
+Usually
+so that when you see them being used later in your code
+meaningful
+infamous
+You’ve probably already realized
+As you work your way through the book
+needs to be passed
+whereas
+a number of handy built‐in functions
+you have come across a number
+Over the course of the book so far
+encapsulate
+numbers in this case
+calculation of an average
+provide
+square root of a number
+suggested solutions
+remains
+respectively
+you can decide on a course of action to follow
+The ability to make decisions is essentially what gives the code its “intelligence.”
+core
+Summary
+where the break statement comes in handy
+you might want to stop the code in its tracks
+prematurely
+it’s best avoided
+unless really necessary
+fairly rare
+
+until
+regardless
+execution instead moves to the first line
+despite the line
+See if you can spot the deliberate mistake that leads to an infinite loop
+until the user gets bored and cross
+will remain
+eventually
+conventional
+prior to the loop
+loop through
+Rather than having to work out
+although it’s much less common to do so
+also provides
+the equation
+is serving a dual purpose
+the equation
+Following this comes your first
+To keep track of how many times you have looped through the code
+would come in handy
+to plot these on a graph
+why would you want to repeat blocks of code anyway
+for both cases
+effectively
+underneath
+you are making use of the fact
+You may have spotted a problem with the switch statement
+If you forget to include this, you could end up executing the code for each case following the case that matches.
+very useful for picking up bugs
+the user might very well (despite the instructions)
+the block of code encompassing
+will be compared against
+an integer value
+a simple guessing game
+unless
+(as the name suggests)
+you want only the block of code directly underneath the relevant case statement to execute
+execution would commence from the code
+Each case statement specifies a value
+test expression
+Switch to the code where the case matches
+If a match is found
+case statements
+These curly braces mark out
+a more efficient alternative
+it confirms that they are all the same
+after having checked
+it goes through each letter in turn
+How does JavaScript deal with this
+so you have a few traps to watch out for
+All that’s been said
+they work just as well
+the code more difficult for humans to read
+we haven’t indented the code.
+This is quite tricky to describe with words
+you don’t end up with an
+where you expect
+you need to be extra careful with
+which catches the situation in which
+Failing that, you have a final
+if either of those conditions is true
+whether
+nor is it between 30 and 39
+Plus it also saves JavaScript from
+this makes it simpler
+You can achieve this
+and therefore harder to understand and debug
+unless you have a particularly tricky condition to evaluate
+into the smallest logical chunks
+the easiest way to approach understanding
+We did so simply for demonstration purposes
+Thus
+you ensure that
+parentheses
+evaluate
+themselves
+Let’s break down the condition
+you have an overall result
+The question posed by the RHS condition
+Taking the first condition first
+a response to the page
+condition
+reverses the result
+in front
+is posing the question
+you have an overall result
+These two halves
+substituting your particular value
+You’ll substitute this
+The easiest way to work out
+You look at each in detail in turn
+will the code execute
+the preceding
+are strung together
+JavaScript offers a better alternative
+but it’s a little verbose and can be quite confusing
+there is an outer if statement
+one nested inside another
+One way of doing this
+negation
+in this example we act
+If I’m not hot, then I’ll eat soup
+rely on
+it does mean you should
+arrives at the conclusion
+The end result is the same
+things that make no difference to the final result
+Otherwise
+operator acts on two boolean values
+If either of the conditions
+if the left‐hand side is false, JavaScript doesn’t even bother checking the right‐hand side and just returns a result of false
+wasting time
+it’s worth noting that JavaScript doesn’t like doing unnecessary work
+Although
+In any other circumstance, the result will be false
+operator actually produces a result
+This is very similar
+which again is evaluated to either true or false
+and this can be evaluated as true or false
+operator works very much as it does in English
+usually
+So if it seems a bit confusing on first read, don’t
+panic. All will become clear.
+with plenty of practical examples
+you take a look at how to use them
+bitwise operators
+whether
+You should have a general idea
+any number besides 0 and NaN converts to true
+which is then implicitly converted to a boolean
+Worse still
+code extract
+one of the most common errors
+braces are required
+the only code to execute is the first line below the if statement
+will be skipped over
+how did this alter the if statement
+the braces
+It evaluates
+This is not necessary, but it is a good practice to get into
+Also worth noting is the fact that the code inside the if statement’s opening brace is indented
+the processing moves on
+In this case,
+is initialized to the result
+is given an initial value
+you’ll be less likely to leave them out when they are actually needed
+If you get into this habit
+To avoid mistakes
+outcome
+regardless
+Instead of the
+A particularly easy mistake to make is to forget
+so we could equally as well have written this
+will treat them
+as belonging
+They mark out
+purpose
+hair-pulling experience
+each of these lines of code does end with a semicolon
+follows the if keyword
+is placed in parentheses
+curly braces
+execute all the code
+Test Condition
+might
+It works very much
+is more than a couple of lines long
+is one you’ll find yourself using in almost every program
+(either it’s amazingly easy to put one equals sign where you meant to put two
+can be mixed up
+important point to mention is the ease with which
+you may find yourself surprised by the outcome
+it’s both safer and clearer if you wrap the calculations on either side inside parentheses
+circumstances
+the multiplication calculations are worked out first
+Precedence
+the more useful of which are summarized
+termed the assignment operator
+you can assign to it a value
+comparison operators
+definition
+essential
+statement
+you can change the flow of the code’s execution depending on whether a condition is true or false
+Has the kettle boiled
+otherwise
+If so, then pour water into cup;
+used to demonstrate how code flows
+Recall from Chapter 1 the natural English instructions
+decision‐making capabilities
+can only evaluate
+You’ll notice
+if the variable today held the day of the week
+Conditions are comparisons
+their intelligence
+depending on whether a particular condition is met
+they enable the program to
+follow a certain course of action
+Statements
+to make your code smarter
+how decision making is implemented
+Validation
+preceding
+appearance
+capability
+gathered
+centigrade
+probably
+common
+far from being the only use
+/
