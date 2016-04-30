@@ -19,3 +19,12 @@ flavors[3] = "vanilla chocolate chip";
 
 
     // p130:
+
+var numFlavors = flavors.length;
+
+
+
+var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+var last = products.length - 1;
+var recent = products[last];
+console.log(recent);
