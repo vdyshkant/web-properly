@@ -1,0 +1,97 @@
+/* === Top nav module === */
+
+.top-nav {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    background-color: hsla(0, 0%, 0%, .3);
+    .logo {
+        float: left;
+    }
+    @media #{$mobile} {
+        .wrap {
+            padding: 0 20px;
+        }
+        .logo {
+            padding-top: 20px;
+        }
+        .logo-svg {
+            width: 74px;
+            height: 23px;
+        }
+    }
+}
+
+.btn-burger {
+    position: relative;
+    // top: 0;
+    // right: 0px;
+
+    float: right;
+
+    cursor: pointer;
+    transition: all .2s;
+
+    outline: 3px dashed steelblue;
+    outline-offset: -2px;
+    @media #{$mobile} {
+        width: 50px;
+        height: 66px;
+    }
+    & span {
+        position: absolute;
+        top: 50%;
+
+        width: 50px;
+
+        transition: all 300ms;
+        transform: translateY(-50%);
+
+        border-top: 4px solid #fff;
+        &::before,
+        &::after {
+            position: absolute;
+            right: 0;
+
+            width: 50px;
+
+            content: "";
+            transition: all 300ms;
+
+            border-top: 4px solid #fff;
+        }
+        &::before {
+            top: -14px;
+        }
+        &::after {
+            top: 6px;
+        }
+    }
+    &:hover {
+        & span {
+            border-color: transparent;
+            &::before,
+            &::after {
+                border-color: crimson;
+            }
+            &::before {
+                top: 0;
+                right: 10px;
+
+                width: 30px;
+
+                transform: rotate(-45deg);
+            }
+            &::after {
+                top: 0;
+                right: 10px;
+
+                width: 30px;
+
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

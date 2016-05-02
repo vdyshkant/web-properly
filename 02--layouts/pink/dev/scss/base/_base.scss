@@ -1,0 +1,88 @@
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;  // шрифт, альтернативное семейство шрифтов
+    font-size: 16px;
+    line-height: 1;
+
+    min-width: 320px; // общая ширина макета, которая может расширяться ещё
+    margin: 0;
+    padding: 0;
+
+    color: #fff; // цвет шрифта
+
+    // шрифты цепляем в html через google.com/fonts под <title>. В настройках смотрим, нужен ли нам font-weight: 400 и/или 700, также добавляем при экспорте настройку cyrillic.
+    // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов
+    // ^^^ там только умолчания
+}
+
+img {
+    max-width: 100%; // запрещаем картинке вылезать за границы своего блока по ширине
+    height: auto; // чтоб при этом сохранялись пропорции.
+
+    // ^^^ там только умолчания
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.box {
+    position: relative;
+
+    background-color: #fff;
+
+    &::after {
+        position: absolute;
+        z-index: 2;
+
+        width: 100%;
+        min-height: 31px;
+
+        content: '';
+
+        background-color: rgb(242, 242, 242);
+        background-repeat: no-repeat;
+        background-position: left 0 top 0;
+        @media #{$mobile} {
+            background-image: url('../img/bg-skew-white.svg');
+            background-size: 100% 31px;
+        }
+    }
+}
+
+.triangle {
+    position: relative;
+
+    background-color: #fff;
+
+    &::after {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+
+        width: 100%;
+        min-height: 31px;
+        margin-top: -1px; // fix for android mobiles
+
+        content: '';
+
+        background-image: url('../img/bg-triangle-white.svg');
+        background-repeat: no-repeat;
+        background-position: left 50% top 0;
+        background-size: 100% 25px;
+        @media #{$mobile} {
+            background-size: 100% 31px;
+        }
+    }
+}
+
+.box-gray {
+    background-color: #f2f2f2;
+}

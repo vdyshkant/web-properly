@@ -1,0 +1,9 @@
+$break-mobile: 320px;
+$break-tablet: 700px;
+$break-desktop: 1020px;
+
+$mobile: "only screen and (max-width: "$break-tablet - 1")";
+$mobile-tablet: "only screen and (max-width: "$break-desktop - 1")";
+$tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-desktop - 1")";
+$tablet-desktop: "only screen and (min-width: "$break-tablet")";
+$desktop: "only screen and (min-width: "$break-desktop")";

@@ -1,0 +1,90 @@
+/* === Header module === */
+.header {
+    .outer {
+        @media only screen and (max-width: 699px) {
+            background: url("../img/background-1@1x.jpg") no-repeat;
+            background-color: hsla(213, 47%, 67%, .5);
+            background-position: center top -2px;
+        }
+    }
+    .heading {
+        @media #{$mobile} {
+            min-height: 458px;
+
+            background: url("../img/iphone-hand-1.png") no-repeat;
+            background-position: center bottom -28px;
+        }
+        .wrap {
+            padding: 85px 20px 250px;
+        }
+        &-text {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 30px;
+
+            text-align: center;
+
+            color: #fff;
+        }
+    }
+}
+
+.downloads {
+    text-align: center;
+    @media #{$mobile} {
+        background-color: #1e2732;
+    }
+    &-link {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+
+        display: block;
+
+        margin-bottom: 31px;
+        padding-top: 14px;
+        padding-bottom: 17px;
+
+        text-decoration: none;
+
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 50px;
+        background: transparent;
+    }
+    &-text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    .wrap {
+        padding: 28px 20px 30px;
+    }
+    &-icons {
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    .ico {
+        display: inline-block;
+
+        margin-right: 32px;
+
+        vertical-align: bottom;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .svg-apple {
+        width: 46px;
+        height: 56px;
+    }
+    .svg-android {
+        width: 42px;
+        height: 47px;
+    }
+    .svg-microsoft {
+        width: 44px;
+        height: 42px;
+    }
+}

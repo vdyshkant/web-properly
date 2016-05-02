@@ -1,0 +1,19 @@
+/* === Offer module === */
+
+.offer {
+    .wrap {
+        padding: 40px 20px 4px;
+    }
+
+    &-line {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+
+        margin-bottom: 27px;
+
+        text-align: center;
+
+        color: #283645;
+    }
+}

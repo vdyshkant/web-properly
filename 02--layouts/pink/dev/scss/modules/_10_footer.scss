@@ -1,0 +1,7 @@
+/* === Footer module === */
+
+.footer {
+    @media #{$mobile} {
+        display: none;
+    }
+}

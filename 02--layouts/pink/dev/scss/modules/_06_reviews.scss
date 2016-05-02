@@ -1,0 +1,91 @@
+/* === Reviews module === */
+
+.reviews {
+    .wrap {
+        padding: 0 20px;
+    }
+
+    .outer {
+        padding-bottom: 36px;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .comment {
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 30px;
+
+        padding-top: 83px;
+
+        color: #283645;
+    }
+
+    .author {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+
+        color: #000;
+        @media #{$mobile} {
+            position: absolute;
+            top: 42px;
+            right: 0;
+            left: 0;
+
+            display: block;
+
+            vertical-align: top;
+        }
+    }
+
+    .about-author {
+        font-size: 18px;
+        line-height: 30px;
+
+        color: #283645;
+        @media #{$mobile} {
+            display: none;
+        }
+    }
+
+    .controls {
+        font: 0/0 a;
+
+        margin-top: 36px;
+
+        text-align: center;
+
+        outline: 2px dashed crimson;
+        outline-offset: -2px;
+    }
+
+    .button {
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+        margin-right: 13px;
+
+        cursor: pointer;
+        vertical-align: top;
+
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background: #bec2c7;
+
+        &.active {
+            border: 3px solid #283645;
+            background: #fff;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

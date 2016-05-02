@@ -1,0 +1,213 @@
+/* === Prices module === */
+
+.table {
+    // position: relative;
+    width: 300%;
+    min-width: 840px;
+
+    table-layout: fixed;
+    border-spacing: 2px;
+    border-collapse: collapse;
+
+    text-transform: uppercase;
+
+    border-color: gray;
+
+    @media #{$mobile} {
+        transition: transform 1s;
+    }
+
+    th {
+        position: relative;
+
+        width: 100%;
+        height: 58px;
+        padding: 16px 20px 20px;
+
+        text-align: center;
+
+        color: #fff;
+        border-right: 2px solid #e5e5e5;
+        background-color: #283645;
+        @media #{$mobile} {
+          &:first-child {
+              display: none;
+          }
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    td {
+        position: relative;
+
+        height: 34px;
+        padding: 15px 70px 10px 22px;
+
+        border: 2px solid #e5e5e5;
+        border-top: none;
+        background: #fff;
+        @media #{$mobile} {
+          &::before {
+              font-size: 14px;
+              line-height: 30px;
+
+              content: attr(data-option);
+              text-transform: uppercase;
+          }
+          &:first-child {
+              display: none;
+          }
+        }
+    }
+}
+
+/* slider begin */
+
+.prices {
+    .outer {
+        position: relative;
+
+        overflow: hidden;
+
+        min-width: 280px;
+        padding-top: 96px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+
+        color: #283645;
+
+        // outline: 3px dashed crimson;
+        // outline-offset: -2px;
+    }
+
+    &-input {
+        display: none;
+    }
+
+    &-controls {
+        z-index: 999;
+
+        width: 140px;
+        margin: 0 auto;
+        margin-top: 43px;
+
+        text-align: center;
+
+        outline: 1px dashed tomato;
+        outline-offset: 0;
+    }
+
+    &-slide {
+        font: 0/0 a;
+
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+        margin-right: 15px;
+
+        cursor: pointer;
+        transition: all .3s;
+        vertical-align: top;
+
+        color: transparent;
+        border-radius: 50%;
+        background: hsla(211,42%,27%,.3);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+
+        margin-bottom: 2px;
+    }
+
+    .cost {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    .icon {
+        font: 0/0 a;
+
+        position: absolute;
+        top: 50%;
+        right: 19px;
+
+        transform: translateY(-50%);
+    }
+
+    .icon-svg {
+        overflow: hidden;
+    }
+
+    .svg-icon-yes {
+        width: 31px;
+        height: 21px;
+    }
+
+    .svg-icon-no {
+        width: 27px;
+        height: 27px;
+    }
+
+    .hit {
+        position: absolute;
+        top: 0;
+        left: -2px;
+
+        overflow: hidden;
+
+        width: 74px;
+        height: 73px;
+        &::before {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 30px;
+
+            position: absolute;
+
+            width: 120px;
+            height: 30px;
+
+            top: 12px;
+            left: -35px;
+
+            content: "хит";
+            transform: rotate(-45deg);
+            text-align: center;
+            text-transform: uppercase;
+            // left: -35px;
+            // top: 12px;
+
+            background-color: #bc345c;
+        }
+    }
+}
+
+#prices-slide-1:checked ~ .prices-controls label[for="prices-slide-1"],
+#prices-slide-2:checked ~ .prices-controls label[for="prices-slide-2"],
+#prices-slide-3:checked ~ .prices-controls label[for="prices-slide-3"] {
+    background: #fff;
+    box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
+}
+
+.prices-input[id="prices-slide-1"]:checked ~ .table {
+    transform: translateX(0%);
+}
+.prices-input[id="prices-slide-2"]:checked ~ .table {
+    transform: translateX(-33.33%);
+}
+.prices-input[id="prices-slide-3"]:checked ~ .table {
+    transform: translateX(-66.66%);
+}
+
+/* eof slider */

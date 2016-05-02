@@ -1,0 +1,11 @@
+/* === Map module === */
+
+.map {
+    height: 200px;
+
+    background-color: hsla(116, 100%, 16%, .58);
+
+    &-image {
+        min-height: 200px;
+    }
+}
