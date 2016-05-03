@@ -16,6 +16,10 @@
     @media #{$mobile} {
         transition: transform 1s;
     }
+    @media #{$tablet-desktop} {
+        width: 100%;
+        min-width: 620px;
+    }
 
     th {
         position: relative;
@@ -30,12 +34,25 @@
         border-right: 2px solid #e5e5e5;
         background-color: #283645;
         @media #{$mobile} {
-          &:first-child {
-              display: none;
-          }
+            &:first-child {
+                display: none;
+            }
         }
         &:last-child {
             border-right: none;
+        }
+        @media #{$tablet-desktop} {
+            width: 25%;
+            padding: 12px 20px 8px;
+            &:first-child {
+                visibility: hidden;
+
+                opacity: 0;
+            }
+        }
+
+        @media #{$desktop} {
+          padding: 16px 20px 20px;
         }
     }
 
@@ -49,16 +66,22 @@
         border-top: none;
         background: #fff;
         @media #{$mobile} {
-          &::before {
-              font-size: 14px;
-              line-height: 30px;
+            &::before {
+                font-size: 14px;
+                line-height: 30px;
 
-              content: attr(data-option);
-              text-transform: uppercase;
-          }
-          &:first-child {
-              display: none;
-          }
+                content: attr(data-option);
+                text-transform: uppercase;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
+        @media #{$tablet} {
+            padding: 6px 15px 5px 15px;
+            &:first-child {
+                border-top: 2px solid #e5e5e5;;
+            }
         }
     }
 }
@@ -66,18 +89,47 @@
 /* slider begin */
 
 .prices {
+    @media #{$tablet} {
+        max-width: 1020px;
+        padding-bottom: 68px;
+    }
+
+    .wrap {
+
+      @media #{$tablet} {
+        padding: 0 40px;
+      }
+      @media #{$desktop} {
+        padding: 0 130px;
+      }
+
+    }
+
     .outer {
         position: relative;
-
-        overflow: hidden;
-
         min-width: 280px;
-        padding-top: 96px;
-        padding-right: 20px;
+        padding-top: 97px;
         padding-bottom: 40px;
-        padding-left: 20px;
-
+        overflow: hidden;
         color: #283645;
+
+        @media #{$mobile} {
+          padding-left: 20px;
+          padding-right: 20px;
+          // overflow: hidden;
+        }
+
+        @media #{$tablet} {
+          padding-top: 76px;
+          padding-bottom: 0;
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        @media #{$desktop} {
+          padding-top: 156px;
+          padding-bottom: 95px;
+        }
 
         // outline: 3px dashed crimson;
         // outline-offset: -2px;
@@ -98,6 +150,9 @@
 
         outline: 1px dashed tomato;
         outline-offset: 0;
+        @media #{$tablet-desktop} {
+            display: none;
+        }
     }
 
     &-slide {
@@ -127,13 +182,38 @@
         line-height: 30px;
 
         margin-bottom: 2px;
+        @media #{$tablet} {
+            font-size: 16px;
+
+            margin-bottom: -3px;
+        }
     }
 
     .cost {
         font-size: 24px;
         font-weight: 300;
         line-height: 30px;
+        @media #{$tablet} {
+            font-size: 18px;
+        }
     }
+
+    .option {
+
+        @media #{$tablet-desktop} {
+            font-size: 14px;
+            line-height: 30px;
+
+            text-transform: none;
+            padding-right: 22px;
+        }
+
+        @media #{$desktop} {
+          font-size: 18px;
+          line-height: 30px;
+        }
+    }
+
 
     .icon {
         font: 0/0 a;
@@ -143,6 +223,11 @@
         right: 19px;
 
         transform: translateY(-50%);
+        @media #{$tablet-desktop} {
+            right: 50%;
+
+            transform: translate(50%, -50%);
+        }
     }
 
     .icon-svg {
@@ -162,24 +247,25 @@
     .hit {
         position: absolute;
         top: 0;
-        left: -2px;
-
+        left: 0;
         overflow: hidden;
-
         width: 74px;
         height: 73px;
+
+        // @media #{$mobile} {
+        //     left: -2px;
+        // }
         &::before {
             font-size: 14px;
             font-weight: 600;
             line-height: 30px;
 
             position: absolute;
+            top: 12px;
+            left: -35px;
 
             width: 120px;
             height: 30px;
-
-            top: 12px;
-            left: -35px;
 
             content: "хит";
             transform: rotate(-45deg);
@@ -189,6 +275,13 @@
             // top: 12px;
 
             background-color: #bc345c;
+        }
+        @media #{$tablet} {
+            left: 0;
+            &::before {
+                top: 4px;
+                left: -40px;
+            }
         }
     }
 }
@@ -200,14 +293,17 @@
     box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
 }
 
-.prices-input[id="prices-slide-1"]:checked ~ .table {
-    transform: translateX(0%);
+@media #{$mobile} {
+  .prices-input[id="prices-slide-1"]:checked ~ .table {
+      transform: translateX(0%);
+  }
+  .prices-input[id="prices-slide-2"]:checked ~ .table {
+      transform: translateX(-33.33%);
+  }
+  .prices-input[id="prices-slide-3"]:checked ~ .table {
+      transform: translateX(-66.66%);
+  }
 }
-.prices-input[id="prices-slide-2"]:checked ~ .table {
-    transform: translateX(-33.33%);
-}
-.prices-input[id="prices-slide-3"]:checked ~ .table {
-    transform: translateX(-66.66%);
-}
+
 
 /* eof slider */

@@ -3,6 +3,11 @@
 .offer {
     .wrap {
         padding: 40px 20px 4px;
+        @media #{$tablet} {
+          padding-bottom: 18px;
+          margin-bottom: 35px;
+          padding-top: 50px;
+        }
     }
 
     &-line {
@@ -15,5 +20,22 @@
         text-align: center;
 
         color: #283645;
+
+        @media #{$tablet} {
+          font-size: 40px;
+          line-height: 48px;
+          &:first-child {
+              margin-bottom: 0;
+          }
+        }
+        &:last-child {
+            margin: 0 auto;
+            @media #{$mobile} {
+              width: 280px;
+            }
+            @media #{$tablet} {
+              width: 340px;
+            }
+        }
     }
 }

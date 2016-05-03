@@ -1,11 +1,21 @@
 /* === Map module === */
 
 .map {
-    height: 200px;
 
-    background-color: hsla(116, 100%, 16%, .58);
+    // background-color: hsla(116, 100%, 16%, .58);
 
     &-image {
-        min-height: 200px;
+
+        @media #{$mobile} {
+          min-height: 200px;
+        }
+
+        @media #{$tablet} {
+          min-height: 380px;
+        }
+
+        @media #{$desktop} {
+          min-height: 525px;
+        }
     }
 }

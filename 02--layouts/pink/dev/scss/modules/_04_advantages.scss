@@ -1,20 +1,70 @@
 /* === Advantages module === */
 
 .advantages {
+
+    @media #{$tablet} {
+      // position: relative;
+    }
+
     .wrap {
-        padding: 80px 20px 0;
+
+        @media #{$mobile} {
+          padding: 107px 20px 0;
+        }
+
+        @media #{$tablet} {
+          padding: 67px 40px 0;
+        }
     }
 
     &-items {
+        position: relative;
         text-align: center;
+        @media #{$tablet} {
+          position: relative;
+          min-height: 412px;
+          text-align: left;
+
+          &::after {
+            content: "";
+
+          }
+        }
     }
 
     &-item {
         margin-bottom: 31px;
+        @media #{$tablet} {
+          padding-left: 310px;
+          margin-bottom: 35px;
+        }
         &:last-child {
             margin-bottom: 42px;
+            @media #{$mobile} {
+              padding-bottom: 318px;
+            }
         }
     }
+
+    .img {
+      @media #{$mobile} {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media #{$tablet} {
+        // display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+      }
+    }
+    //
+    // .last-img {
+    //
+    // }
 
     .title {
         font-size: 18px;
@@ -33,13 +83,22 @@
         color: #283645;
     }
 
-    &::after {
-        display: block;
-
-        height: 278px;
-
-        content: "";
-
-        background: url("../img/bg-advantages-screen-1-3.png") 50% 0 no-repeat;
-    }
+    // &::after {
+    //     display: block;
+    //
+    //     height: 278px;
+    //
+    //     content: "";
+    //
+    //     background: url("../img/bg-advantages-screen-1-3.png") 50% 0 no-repeat;
+        // @media #{$tablet} {
+        //   position: absolute;
+        //   left: 0;
+        //   width: 268px;
+        //   height: 481px;
+        //   bottom: 0;
+        //   background: url("../img/advantages-screen-2-3@1x.png") 40px 0 no-repeat;
+        //   z-index: 3;
+        // }
+    // }
 }

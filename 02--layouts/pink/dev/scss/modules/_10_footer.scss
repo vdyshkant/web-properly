@@ -1,7 +1,194 @@
 /* === Footer module === */
 
 .footer {
+
     @media #{$mobile} {
         display: none;
     }
-}
+
+    @media #{$tablet} {
+        display: block;
+    }
+
+    .wrap {
+      padding: 0 40px;
+      @media #{$desktop} {
+        padding: 0 130px;
+      }
+    }
+
+    .row {
+      padding: 36px 0;
+      @media #{$desktop} {
+        padding: 70px 0 73px;
+      }
+
+      .col {
+        display: inline-block;
+      }
+    }
+
+    .logo {
+        float: left;
+        min-width: 150px;
+        width: 24.19%;
+        height: 40px;
+
+        // outline: 2px dashed burlywood;
+        // outline-offset: -2px;
+
+        &__letter {
+          display: none;
+          @media #{$desktop} {
+            &--desktop {}
+          }
+          @media #{$tablet-desktop} {
+            &--tablet-desktop {
+              display: block;
+              fill: #283645;
+            }
+          }
+          @media #{$mobile} {
+            &--mobile {
+              display: block;
+            }
+          }
+        }
+        &__star {
+          display: none;
+          @media #{$desktop} {
+            display: block;
+            fill: rgb(210, 40, 86);
+          }
+          &--footer {
+            fill: #283645;
+          }
+        }
+
+        &__glasses {
+          display: none;
+          @media #{$tablet} {
+              display: block;
+              fill: rgb(210, 40, 86);
+          }
+          &--desktop {
+            display: block;
+            fill: rgb(210, 40, 86);
+          }
+        }
+    }
+
+    .social {
+      // font: 0/0 a;
+      min-width: 180px;
+      width: 29.03%;
+      margin-top: 4px;
+      margin-left: 11.5%;
+
+      // outline: 2px dashed sienna;
+      text-align: center;
+      // outline-offset: -2px;
+      font-size: 0;
+      vertical-align: top;
+
+      &-link {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        font: 0/0 a;
+        width: 45px;
+        height: 45px;
+        border: 3px solid rgba(40,54,69,.1);
+        border-radius: 50%;
+        transition: .3s;
+        margin-right: 12px;
+
+        &:hover {
+          border-color: #283645;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &-tw .social-svg {
+          width: 17.5px;
+          height: 14.663px;
+        }
+        &-fb .social-svg {
+          width: 8.673px;
+          height: 18.944px;
+        }
+        &-yt .social-svg {
+          width: 14.64px;
+          height: 13.96px;
+        }
+      }
+      &-svg {
+        position: absolute;
+        fill: #d22856;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    .copy {
+      min-width: 200px;
+      width: 32.25%;
+      float: right;
+      margin-top: 20px;
+      text-align: right;
+
+      // outline: 2px dashed limegreen;
+      // outline-offset: -2px;
+
+      &-link {
+        position: relative;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283645;
+        text-decoration: none;
+
+        &:hover {
+          .copy-svg {
+            fill: #000;
+          }
+        }
+      }
+
+      &-website-by {
+        padding-right: 38px;
+        margin-right: 15px;
+      }
+      &-website-for {
+        padding-right: 42px;
+      }
+
+      &-svg {
+
+        position: absolute;
+        fill: #d22856;
+        transition: .3s;
+
+        &-glukhanko {
+          width: 25.988px;
+          height: 29.922px;
+
+          top: -3px;
+          right: 1px;
+
+          // transform: translateY(-50%);
+        }
+        &-htmlacademy {
+          width: 26.096px;
+          height: 33.803px;
+
+          top: -4px;
+          right: 1px;
+        }
+      }
+    }
+
+
+} /* .footer */

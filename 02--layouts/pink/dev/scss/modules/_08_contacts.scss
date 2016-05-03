@@ -13,8 +13,17 @@
     }
 
     .wrap {
-        padding-top: 42px;
-        padding-bottom: 39px;
+
+        @media #{$mobile} {
+          padding: 42px 20px 18px;
+        }
+        @media #{$tablet} {
+          padding: 45px 40px 2px;
+        }
+        @media #{$desktop} {
+          padding: 63px 130px 2px;
+          // position: relative;
+        }
     }
 
     .heading {
@@ -22,20 +31,93 @@
         font-weight: 300;
         line-height: 30px;
 
+        margin: 0 auto;
         margin-bottom: 33px;
+        @media #{$tablet} {
+          // padding: 0 20px;
+          font-size: 40px;
+          line-height: 48px;
+          // font-weight: 300;
+          margin-bottom: 45px;
+        }
+
+        @media #{$desktop} {
+          //
+          font-size: 50px;
+          line-height: 60px;
+          margin-bottom: 58px;
+        }
     }
 
     .item {
+        @media #{$tablet} {
+          &.phone,
+          &.email {
+            width: 48.4%;
+            padding-right: 0.16%;
+          }
+
+          &.address {
+            width: 300px;
+          }
+
+        }
+
         &.phone {
             margin-bottom: 25px;
+            @media #{$tablet} {
+              float: left;
+              margin-bottom: 51px;
+
+              outline: 2px solid turquoise;
+              outline-offset: -2px;
+            }
         }
+
         &.email {
             margin-bottom: 29px;
+            @media #{$tablet} {
+              float: right;
+              margin-bottom: 51px;
+
+              outline: 2px solid peru;
+              outline-offset: -2px;
+            }
         }
+
         &.address {
+            padding-bottom: 23px;
             .description {
                 line-height: 27px;
+                @media #{$tablet} {
+                  line-height: 28px;
+                }
             }
+            @media #{$tablet} {
+                clear: both;
+                margin: 0 auto;
+            }
+        }
+
+        @media #{$desktop} {
+          width: 31.9148936%;
+
+          &.phone {
+            float: left;
+            margin-right: 0.021276596%;
+            padding-bottom: 0;
+          }
+
+          &.address {
+            display: inline-block;
+            padding-bottom: 0;
+          }
+
+          &.email {
+            float: right;
+            margin-left: 0.021276596%;
+            padding-bottom: 0;
+          }
         }
     }
 
@@ -46,6 +128,12 @@
 
         margin-bottom: 6px;
         padding-left: 3px;
+        @media #{$tablet} {
+          margin-bottom: 8px;
+        }
+        @media #{$desktop} {
+          margin-bottom: 27px;
+        }
     }
 
     .description,

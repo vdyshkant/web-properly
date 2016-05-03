@@ -1,12 +1,37 @@
 /* === Reviews module === */
 
 .reviews {
+
+    @media #{$tablet} {
+        padding-bottom: 13px;
+    }
+
+    @media #{$desktop} {
+      margin: 0 auto;
+      background-image: url('../img/quotes.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 72px;
+    }
+
     .wrap {
         padding: 0 20px;
+
+        @media #{$desktop} {
+          padding: 167px 130px 0;
+        }
     }
 
     .outer {
         padding-bottom: 36px;
+
+        @media #{$tablet} {
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        @media #{$desktop} {
+            position: relative;
+        }
     }
 
     .item {
@@ -15,15 +40,37 @@
 
     .comment {
         text-align: center;
+
+        @media #{$desktop} {
+          max-width: 700px;
+          margin: 0 auto;
+        }
     }
 
     .text {
         font-size: 14px;
         line-height: 30px;
 
-        padding-top: 83px;
+        padding-top: 43px;
 
         color: #283645;
+
+        @media #{$mobile-tablet} {
+          position: relative;
+
+          &::before {
+            content: "«";
+          }
+          &::after {
+            content: "»";
+          }
+        }
+
+        @media #{$tablet-desktop} {
+          font-size: 18px;
+          line-height: 30px;
+          margin-bottom: 35px;
+        }
     }
 
     .author {
@@ -32,9 +79,10 @@
         line-height: 30px;
 
         color: #000;
+
         @media #{$mobile} {
             position: absolute;
-            top: 42px;
+            top: 0;
             right: 0;
             left: 0;
 
@@ -42,28 +90,100 @@
 
             vertical-align: top;
         }
-    }
 
-    .about-author {
-        font-size: 18px;
-        line-height: 30px;
+        @media #{$tablet} {
+          font-size: 20px;
+          line-height: 30px;
+        }
 
-        color: #283645;
-        @media #{$mobile} {
-            display: none;
+        @media #{$desktop} {
+          font-size: 24px;
+          line-height: 30px;
         }
     }
 
-    .controls {
+    .about-author {
+        font-size: 14px;
+        line-height: 30px;
+
+        color: #283645;
+
+        @media #{$mobile} {
+            display: none;
+        }
+
+        @media #{$tablet} {
+            margin-top: 2px;
+        }
+
+        @media #{$desktop} {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    &-controls {
         font: 0/0 a;
 
-        margin-top: 36px;
+        margin-top: 33px;
 
         text-align: center;
 
-        outline: 2px dashed crimson;
-        outline-offset: -2px;
+        // outline: 2px dashed crimson;
+        // outline-offset: -2px;
+
+        @media #{$tablet} {
+          margin-top: 34px;
+        }
+
+        @media #{$desktop} {
+          display: none;
+        }
     }
+
+    @media #{$mobile-tablet} {
+      &-toggle {
+        font: 0/0 a;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: all .3s;
+        vertical-align: top;
+        color: transparent;
+        border-radius: 50%;
+        background: rgba(40, 68, 98, 0.3);
+      }
+    }
+
+    @media #{$desktop} {
+        &::before,
+        &::after {
+          content: "";
+          display: none;
+          position: absolute;
+          top: 219px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          border-bottom: 2px solid rgba(40,54,69,.3);
+          border-right: 2px solid rgba(40,54,69,.3);
+          background-color: transparent;
+        }
+
+        &::before {
+          left: 5px;
+          transform: rotate(135deg);
+        }
+
+        &::after {
+          right: 5px;
+          transform: rotate(-45deg);
+        }
+    }
+
+
 
     .button {
         display: inline-block;
@@ -88,4 +208,44 @@
             margin-right: 0;
         }
     }
+}
+
+.reviews-input {
+    display: none;
+}
+@media #{$mobile-tablet} {
+  #toggle-reviews-1:checked ~ .reviews-controls label[for="toggle-reviews-1"],
+  #toggle-reviews-2:checked ~ .reviews-controls label[for="toggle-reviews-2"],
+  #toggle-reviews-3:checked ~ .reviews-controls label[for="toggle-reviews-3"] {
+    background: #fff;
+    box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
+  }
+}
+
+.reviews .item {
+  overflow: hidden;
+  transition: all .3s;
+
+  @media #{$desktop} {
+    padding: 0 20px;
+  }
+}
+.reviews .item {
+  display: none;
+}
+
+#toggle-reviews-1:checked ~ .reviews-item-1,
+#toggle-reviews-2:checked ~ .reviews-item-2,
+#toggle-reviews-3:checked ~ .reviews-item-3 {
+  display: block;
+}
+@media #{$desktop} {
+  .reviews-input:first-of-type:checked~.reviews-controls .reviews-toggle-3:before,
+   .reviews-input:last-of-type:checked~.reviews-controls .reviews-toggle-1:after,
+  .reviews-input[id=toggle-reviews-1]:checked~.reviews-controls .reviews-toggle-2:after,
+  .reviews-input[id=toggle-reviews-2]:checked~.reviews-controls .reviews-toggle-1:before,
+  .reviews-input[id=toggle-reviews-2]:checked~.reviews-controls .reviews-toggle-3:after,
+  .reviews-input[id=toggle-reviews-3]:checked~.reviews-controls .reviews-toggle-2:before {
+    display: block;
+  }
 }

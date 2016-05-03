@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;  // шрифт, альтернативное семейство шрифтов
+    font-family: "Open Sans", sans-serif;  // шрифт, альтернативное семейство шрифтов
     font-size: 16px;
     line-height: 1;
 
@@ -26,11 +26,16 @@ img {
     // ^^^ там только умолчания
 }
 
+.main {
+  outline: 2px dashed crimson;
+  outline-offset: -2px;
+}
+
 .clearfix::after {
     display: table;
     clear: both;
 
-    content: '';
+    content: "";
 }
 
 .box {
@@ -43,16 +48,27 @@ img {
         z-index: 2;
 
         width: 100%;
-        min-height: 31px;
 
-        content: '';
+        content: "";
 
         background-color: rgb(242, 242, 242);
+        background-image: url("../img/bg-skew-white.svg");
         background-repeat: no-repeat;
         background-position: left 0 top 0;
+
         @media #{$mobile} {
-            background-image: url('../img/bg-skew-white.svg');
             background-size: 100% 31px;
+            min-height: 31px;
+        }
+
+        @media #{$tablet} {
+            min-height: 54px;
+            background-size: 100% 54px;
+        }
+
+        @media #{$desktop} {
+            min-height: 90px;
+            background-size: 100% 90px;
         }
     }
 }
@@ -68,20 +84,34 @@ img {
         left: 0;
 
         width: 100%;
-        min-height: 31px;
-        margin-top: -1px; // fix for android mobiles
+        margin-top: -1px; // !!fix for android mobiles
 
-        content: '';
+        content: "";
 
-        background-image: url('../img/bg-triangle-white.svg');
+        background-image: url("../img/bg-triangle-white.svg");
         background-repeat: no-repeat;
         background-position: left 50% top 0;
-        background-size: 100% 25px;
+
         @media #{$mobile} {
+            min-height: 31px;
+
             background-size: 100% 31px;
+        }
+
+        @media #{$tablet} {
+            min-height: 73px;
+
+            background-size: 100% 73px;
+        }
+
+        @media #{$desktop} {
+            min-height: 125px;
+
+            background-size: 100% 125px;
         }
     }
 }
+
 
 .box-gray {
     background-color: #f2f2f2;

@@ -1,10 +1,22 @@
 /* === Header module === */
 .header {
+
     .outer {
-        @media only screen and (max-width: 699px) {
+        @media #{$mobile} {
             background: url("../img/background-1@1x.jpg") no-repeat;
             background-color: hsla(213, 47%, 67%, .5);
             background-position: center top -2px;
+        }
+        @media #{$tablet} {
+
+            padding: 203px 40px 109px;
+            background: url("../img/iphone-hand-tablet@1x.png") no-repeat,
+                        url("../img/background-2@1x.jpg") no-repeat;
+
+            background-position: right bottom, center top;
+            // padding-left: 40px;
+            // padding-bottom: 40px;
+            // min-height: 689px;
         }
     }
     .heading {
@@ -14,10 +26,22 @@
             background: url("../img/iphone-hand-1.png") no-repeat;
             background-position: center bottom -28px;
         }
-        .wrap {
-            padding: 85px 20px 250px;
+        @media #{$tablet} {
+
+            width: 50%;
+            margin-bottom: 30px;
         }
-        &-text {
+        .wrap {
+            @media #{$mobile} {
+                padding: 85px 40px 250px;
+            }
+            @media #{$tablet} {
+                padding-top: 0;
+                padding-bottom: 1px;
+                position: relative;
+            }
+        }
+        &-title {
             font-size: 24px;
             font-weight: 300;
             line-height: 30px;
@@ -25,14 +49,49 @@
             text-align: center;
 
             color: #fff;
+            @media #{$tablet} {
+              font-size: 40px;
+              line-height: 48px;
+              width: 300px;
+              padding-right: 10px;
+              margin: 0 auto;
+            }
         }
     }
 }
 
 .downloads {
+
     text-align: center;
+
     @media #{$mobile} {
         background-color: #1e2732;
+    }
+
+    @media #{$tablet} {
+        width: 50%;
+    }
+
+    .wrap {
+
+        @media #{$mobile} {
+            padding: 28px 20px 30px;
+            width: 280px;
+            margin: 0 auto;
+        }
+        @media #{$tablet} {
+            width: 300px;
+            margin: 0 auto;
+            padding-right: 10px;
+        }
+    }
+    &-btn {
+        width: 280px;
+
+        @media #{$tablet} {
+          margin-bottom: 46px;
+          margin-right: 20px;
+        }
     }
     &-link {
         font-size: 18px;
@@ -53,17 +112,29 @@
         background: transparent;
     }
     &-text {
-        font-size: 14px;
         font-weight: 300;
-        line-height: 24px;
-    }
-    .wrap {
-        padding: 28px 20px 30px;
+
+        @media #{$mobile} {
+          font-size: 14px;
+          line-height: 24px;
+          width: 280px;
+          margin: 0 auto;
+        }
+
+        @media #{$tablet} {
+          font-size: 18px;
+          line-height: 24px;
+          padding: 0;
+        }
     }
     &-icons {
         width: 100%;
         margin-bottom: 21px;
+        @media #{$tablet} {
+          margin-bottom: 35px;
+        }
     }
+
     .ico {
         display: inline-block;
 
@@ -75,14 +146,17 @@
             margin-right: 0;
         }
     }
+
     .svg-apple {
         width: 46px;
         height: 56px;
     }
+
     .svg-android {
         width: 42px;
         height: 47px;
     }
+
     .svg-microsoft {
         width: 44px;
         height: 42px;
