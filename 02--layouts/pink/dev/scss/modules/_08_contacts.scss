@@ -22,6 +22,8 @@
         }
         @media #{$desktop} {
           padding: 63px 130px 2px;
+          max-width: 940px;
+          margin: 0 auto;
           // position: relative;
         }
     }

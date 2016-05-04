@@ -13,7 +13,8 @@
     .wrap {
       padding: 0 40px;
       @media #{$desktop} {
-        padding: 0 130px;
+        max-width: 940px;
+        margin: 0 auto;
       }
     }
 

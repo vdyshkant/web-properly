@@ -3,26 +3,50 @@
 .research {
     display: block;
 
-    min-height: 283px;
-    padding-top: 97px;
-    padding-left: 310px;
-
-    background-image: url("../img/bg-timer.svg");
-    background-repeat: no-repeat;
-    background-position: top 56px left 40px;
-    background-size: 262px 302px;
+    min-height: 390px;
 
     @media #{$mobile} {
       display: none;
     }
 
-    @media #{$tablet} {
-      padding-top: 55px;
-      background-position: top 15px left 40px;
+    @media #{$desktop} {
+      background-color: #f2f2f2;
+      min-height: 450px;
     }
 
     .wrap {
+
       padding: 0 40px;
+
+      @media #{$desktop} {
+        padding: 0 130px;
+        max-width: 940px;
+        margin: 0 auto;
+      }
+    }
+
+    .outer {
+        padding-top: 97px;
+
+        background-image: url("../img/bg-timer.svg");
+        background-repeat: no-repeat;
+        background-size: 262px 302px;
+
+        @media #{$tablet} {
+          background-position: top 56px left 0;
+          padding-left: 310px;
+          min-height: 300px;
+        }
+
+        @media #{$desktop} {
+            padding-top: 130px;
+            padding-bottom: 65px;
+            padding-left: 367px;
+
+            background-position: top 38px left 0;
+            background-size: 300px 345px;
+        }
+
     }
 
     &-title {
@@ -31,9 +55,15 @@
         line-height: 36px;
 
         margin-bottom: 9px;
-        padding-right: 140px;
-
         color: #000;
+
+        @media #{$tablet} {
+          padding-right: 140px;
+        }
+
+        @media #{$desktop} {
+          margin-bottom: 21px;
+        }
     }
 
     &-text {
@@ -45,6 +75,14 @@
         padding-right: 10px;
 
         color: #283645;
+
+
+
+        @media #{$desktop} {
+          font-size: 18px;
+          line-height: 30px;
+          margin-bottom: 32px;
+        }
     }
 
     &-link {
@@ -57,6 +95,11 @@
         color: #d22856;
         &:hover {
             text-decoration: none;
+        }
+
+        @media #{$desktop} {
+          font-size: 18px;
+          line-height: 30px;
         }
     }
 }

@@ -26,11 +26,6 @@ img {
     // ^^^ там только умолчания
 }
 
-.main {
-  outline: 2px dashed crimson;
-  outline-offset: -2px;
-}
-
 .clearfix::after {
     display: table;
     clear: both;

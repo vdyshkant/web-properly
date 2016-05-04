@@ -17,12 +17,18 @@
         padding: 0 20px;
 
         @media #{$desktop} {
-          padding: 167px 130px 0;
+          padding: 0 130px;
+          max-width: 940px;
+          margin: 0 auto;
         }
     }
 
     .outer {
         padding-bottom: 36px;
+
+        @media #{$mobile} {
+          padding-top: 42px;
+        }
 
         @media #{$tablet} {
             padding-top: 10px;
@@ -31,11 +37,18 @@
 
         @media #{$desktop} {
             position: relative;
+            padding-top: 167px;
+            padding-bottom: 4px;
         }
     }
 
     .item {
         position: relative;
+        /* medaia: */
+        overflow: hidden;
+        display: none;
+        transition: all .3s;
+        //
     }
 
     .comment {
@@ -51,9 +64,11 @@
         font-size: 14px;
         line-height: 30px;
 
-        padding-top: 43px;
-
         color: #283645;
+
+        @media #{$mobile} {
+          padding-top: 43px;
+        }
 
         @media #{$mobile-tablet} {
           position: relative;
@@ -70,6 +85,10 @@
           font-size: 18px;
           line-height: 30px;
           margin-bottom: 35px;
+        }
+
+        @media #{$desktop} {
+          padding-top: 17px;
         }
     }
 
@@ -119,51 +138,68 @@
         @media #{$desktop} {
             font-size: 18px;
             line-height: 30px;
+            padding-top: 3px;
         }
     }
 
+    & input[type="radio"] {
+      display: none;
+    }
+
     &-controls {
+        z-index: 999;
         font: 0/0 a;
 
         margin-top: 33px;
 
         text-align: center;
 
-        // outline: 2px dashed crimson;
-        // outline-offset: -2px;
+        // outline: 1px dashed crimson;
+        // outline-offset: -1px;
+
+        @media #{$mobile} {
+          margin-top: 36px;
+        }
 
         @media #{$tablet} {
           margin-top: 34px;
         }
 
         @media #{$desktop} {
-          display: none;
+          // display: none;
         }
     }
 
-    @media #{$mobile-tablet} {
-      &-toggle {
-        font: 0/0 a;
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        margin-right: 15px;
-        cursor: pointer;
-        transition: all .3s;
-        vertical-align: top;
-        color: transparent;
-        border-radius: 50%;
-        background: rgba(40, 68, 98, 0.3);
-      }
-    }
+    &-toggle {
+      font: 0/0 a;
 
-    @media #{$desktop} {
-        &::before,
-        &::after {
+      display: inline-block;
+      margin-right: 15px;
+
+      cursor: pointer;
+      transition: all .3s;
+      vertical-align: top;
+
+      color: transparent;
+      border-radius: 50%;
+      @media #{$mobile-tablet} {
+          background: hsla(211,42%,27%,.3);
+          width: 6px;
+          height: 6px;
+      }
+
+
+      &:last-child {
+          margin-right: 0;
+      }
+
+      &::before,
+      &::after {
+        @media #{$desktop} {
           content: "";
-          display: none;
           position: absolute;
-          top: 219px;
+          display: none;
+          top: 216px;
           width: 30px;
           height: 30px;
           cursor: pointer;
@@ -171,18 +207,22 @@
           border-right: 2px solid rgba(40,54,69,.3);
           background-color: transparent;
         }
+      }
 
-        &::before {
+      &::before {
+        @media #{$desktop} {
           left: 5px;
           transform: rotate(135deg);
         }
+      }
 
-        &::after {
+      &::after {
+        @media #{$desktop} {
           right: 5px;
           transform: rotate(-45deg);
         }
+      }
     }
-
 
 
     .button {
@@ -208,44 +248,37 @@
             margin-right: 0;
         }
     }
+
+    &.box::after {
+      min-height: 25px;
+      background-size: 100% 25px;
+    }
 }
 
-.reviews-input {
-    display: none;
-}
-@media #{$mobile-tablet} {
-  #toggle-reviews-1:checked ~ .reviews-controls label[for="toggle-reviews-1"],
-  #toggle-reviews-2:checked ~ .reviews-controls label[for="toggle-reviews-2"],
-  #toggle-reviews-3:checked ~ .reviews-controls label[for="toggle-reviews-3"] {
+/* css slider */
+
+#toggle-reviews-1:checked ~ .reviews-controls label[for="toggle-reviews-1"],
+#toggle-reviews-2:checked ~ .reviews-controls label[for="toggle-reviews-2"],
+#toggle-reviews-3:checked ~ .reviews-controls label[for="toggle-reviews-3"] {
     background: #fff;
-    box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
-  }
-}
-
-.reviews .item {
-  overflow: hidden;
-  transition: all .3s;
-
-  @media #{$desktop} {
-    padding: 0 20px;
-  }
-}
-.reviews .item {
-  display: none;
+    @media #{$mobile-tablet} {
+        box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
+    }
 }
 
 #toggle-reviews-1:checked ~ .reviews-item-1,
 #toggle-reviews-2:checked ~ .reviews-item-2,
 #toggle-reviews-3:checked ~ .reviews-item-3 {
-  display: block;
-}
-@media #{$desktop} {
-  .reviews-input:first-of-type:checked~.reviews-controls .reviews-toggle-3:before,
-   .reviews-input:last-of-type:checked~.reviews-controls .reviews-toggle-1:after,
-  .reviews-input[id=toggle-reviews-1]:checked~.reviews-controls .reviews-toggle-2:after,
-  .reviews-input[id=toggle-reviews-2]:checked~.reviews-controls .reviews-toggle-1:before,
-  .reviews-input[id=toggle-reviews-2]:checked~.reviews-controls .reviews-toggle-3:after,
-  .reviews-input[id=toggle-reviews-3]:checked~.reviews-controls .reviews-toggle-2:before {
     display: block;
-  }
 }
+
+.reviews-input:first-of-type:checked ~ .reviews-controls .reviews-toggle-3::before,
+ .reviews-input:last-of-type:checked ~ .reviews-controls .reviews-toggle-1::after,
+.reviews-input[id=toggle-reviews-1]:checked ~ .reviews-controls .reviews-toggle-2::after,
+.reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-1::before,
+.reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-3::after,
+.reviews-input[id=toggle-reviews-3]:checked ~ .reviews-controls .reviews-toggle-2::before {
+    display: block;
+}
+
+/* eof css slider */

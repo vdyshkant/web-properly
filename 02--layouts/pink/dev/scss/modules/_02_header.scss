@@ -1,12 +1,20 @@
 /* === Header module === */
 .header {
 
+  background: url("../img/iphone-hand-desktop@1x.png") no-repeat,
+              url("../img/background-fullsize.jpg") no-repeat;
+
+  background-position: right bottom, center center;
+  background-size: 1050px, cover;
+
     .outer {
+
         @media #{$mobile} {
             background: url("../img/background-1@1x.jpg") no-repeat;
             background-color: hsla(213, 47%, 67%, .5);
             background-position: center top -2px;
         }
+
         @media #{$tablet} {
 
             padding: 203px 40px 109px;
@@ -14,33 +22,54 @@
                         url("../img/background-2@1x.jpg") no-repeat;
 
             background-position: right bottom, center top;
-            // padding-left: 40px;
-            // padding-bottom: 40px;
-            // min-height: 689px;
+        }
+
+        @media #{$desktop} {
+            padding: 219px 40px 123px;
+            max-width: 940px;
+            margin: 0 auto;
         }
     }
     .heading {
+
         @media #{$mobile} {
             min-height: 458px;
 
             background: url("../img/iphone-hand-1.png") no-repeat;
             background-position: center bottom -28px;
         }
+
         @media #{$tablet} {
 
             width: 50%;
             margin-bottom: 30px;
         }
+
+        @media #{$desktop} {
+
+            margin-bottom: 50px;
+        }
+
         .wrap {
+
             @media #{$mobile} {
                 padding: 85px 40px 250px;
             }
+
             @media #{$tablet} {
                 padding-top: 0;
                 padding-bottom: 1px;
                 position: relative;
             }
+
+            @media #{$desktop} {
+                padding-top: 0;
+                padding-bottom: 1px;
+                position: relative;
+                max-width: 1020px;
+            }
         }
+
         &-title {
             font-size: 24px;
             font-weight: 300;
@@ -49,12 +78,20 @@
             text-align: center;
 
             color: #fff;
+
             @media #{$tablet} {
               font-size: 40px;
               line-height: 48px;
               width: 300px;
               padding-right: 10px;
               margin: 0 auto;
+            }
+
+            @media #{$desktop} {
+              font-size: 50px;
+              line-height: 60px;
+              width: 300px;
+              padding-right: 10px;
             }
         }
     }
@@ -72,6 +109,7 @@
         width: 50%;
     }
 
+
     .wrap {
 
         @media #{$mobile} {
@@ -79,12 +117,19 @@
             width: 280px;
             margin: 0 auto;
         }
+
         @media #{$tablet} {
             width: 300px;
             margin: 0 auto;
             padding-right: 10px;
         }
+
+        @media #{$desktop} {
+            width: 300px;
+            padding-right: 10px;
+        }
     }
+
     &-btn {
         width: 280px;
 
@@ -92,7 +137,13 @@
           margin-bottom: 46px;
           margin-right: 20px;
         }
+
+        @media #{$desktop} {
+          width: 300px;
+          margin-bottom: 66px;
+        }
     }
+
     &-link {
         font-size: 18px;
         font-weight: 700;
@@ -110,7 +161,14 @@
         border: 3px solid #fff;
         border-radius: 50px;
         background: transparent;
+
+        @media #{$desktop} {
+          font-size: 21px;
+          line-height: 18px;
+          margin-bottom: 0;
+        }
     }
+
     &-text {
         font-weight: 300;
 
@@ -126,12 +184,23 @@
           line-height: 24px;
           padding: 0;
         }
+
+        @media #{$desktop} {
+          font-size: 18px;
+          line-height: 24px;
+          padding: 0;
+        }
     }
     &-icons {
         width: 100%;
         margin-bottom: 21px;
+
         @media #{$tablet} {
           margin-bottom: 35px;
+        }
+
+        @media #{$desktop} {
+          margin-bottom: 54px;
         }
     }
 

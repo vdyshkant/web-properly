@@ -19,6 +19,8 @@
     @media #{$tablet-desktop} {
         width: 100%;
         min-width: 620px;
+        max-width: 940px;
+        margin: 0 auto;
     }
 
     th {
@@ -53,6 +55,12 @@
 
         @media #{$desktop} {
           padding: 16px 20px 20px;
+          &:nth-child(2){
+            border-radius: 5px 0 0 0;
+          }
+          &:nth-child(4){
+            border-radius: 0 5px 0 0;
+          }
         }
     }
 
@@ -84,6 +92,15 @@
             }
         }
     }
+
+    @media #{$desktop} {
+      tr:nth-child(2) {
+        td:first-child {
+          border-top: 2px solid #e5e5e5;
+        }
+      }
+    }
+
 }
 
 /* slider begin */
@@ -127,8 +144,10 @@
         }
 
         @media #{$desktop} {
-          padding-top: 156px;
+          padding-top: 152px;
           padding-bottom: 95px;
+          padding-left: 1px;
+          padding-right: 1px;
         }
 
         // outline: 3px dashed crimson;
