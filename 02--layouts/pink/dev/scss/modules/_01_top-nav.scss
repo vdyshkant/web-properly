@@ -24,13 +24,16 @@
     .logo {
 
         float: left;
+        z-index: 5;
 
         @media #{$mobile} {
             padding-top: 20px;
+            margin-left: 20px;
         }
 
         @media #{$tablet} {
             padding-top: 27px;
+            margin-left: 40px;
         }
 
         @media #{$desktop} {
@@ -40,6 +43,7 @@
         &__letter {
 
           display: none;
+          transition: all .3s ease-in-out;
 
           @media #{$tablet-desktop} {
             &--tablet-desktop {
@@ -59,12 +63,16 @@
 
           @media #{$desktop} {
             display: block;
+            transition: all .3s ease-in-out;
           }
+
+
         }
 
         &__glasses {
 
           display: none;
+          transition: all .3s ease-in-out;
 
           @media #{$tablet} {
               display: block;
@@ -76,12 +84,146 @@
             }
           }
         }
+
+        // &:hover {
+        //
+        //   & .logo__star {
+        //     animation-name: colorPulse;
+        //     animation-duration: .6s;
+        //     animation-iteration-count: infinite;
+        //     animation-direction: alternate;
+        //     animation-fill-mode: forwards;
+        //   }
+        //
+        //   & .logo__letter {
+        //     fill: #d22856;
+        //   }
+        //
+        //   & .logo__glasses {
+        //     fill: #d22856;
+        //   }
+        // }
     }
+}
+
+
+
+.main-nav {
+  position: absolute;
+  background: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .nav-list {
   display: none;
 }
+
+.nav-list-active {
+  display: block;
+  background: #283645;
+}
+
+.main-nav-active {
+
+  @media #{$mobile-tablet} {
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    .logo {
+      margin-left: 20px;
+    }
+  }
+
+}
+
+
+
+  .nav {
+
+    &-list {
+
+      animation: appear .3s ease-out;
+
+      &-fade {
+        animation: disappear .3s ease-out;
+      }
+
+      @keyframes appear {
+        from { margin-top: -300px; }
+        to   { margin-top: 1px; }
+      }
+      @keyframes disappear {
+        from { margin-top: 1px; }
+        to   { margin-top: -300px; }
+      }
+
+      @media #{$mobile} {
+        padding-top: 69px;
+        // display: block;
+      }
+
+
+      @media #{$tablet} {
+        padding-top: 109px;
+        // display: block;
+      }
+
+    }
+
+    &-item {
+        &:first-child {
+
+          .nav-link {
+            @media #{$mobile-tablet} {
+                border-top: 1px solid rgba(0, 0, 0, 1);
+            }
+
+          }
+        }
+    }
+
+    &-link {
+      @media #{$mobile} {
+          display: block;
+          text-align: center;
+          padding: 15px 0;
+          font-size: 18px;
+          line-height: 32px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 700;
+          text-transform: uppercase;
+          box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px -1px 0px 0px black;
+
+          &:hover {
+            color: #d22856;
+          }
+      }
+      @media #{$tablet} {
+          display: block;
+          text-align: center;
+          padding: 15px 0;
+          font-size: 18px;
+          line-height: 32px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 700;
+          text-transform: uppercase;
+          box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px -1px 0px 0px black;
+
+          &:hover {
+            color: #d22856;
+          }
+      }
+
+    }
+  }
+
+
 
 @media #{$desktop} {
   .main-nav {
@@ -157,7 +299,8 @@
     position: relative;
     float: right;
     cursor: pointer;
-    transition: all .1s;
+    transition: all .1s ease-in-out;
+    z-index: 3;
 
     // outline: 3px dashed steelblue;
     // outline-offset: -2px;
@@ -188,6 +331,7 @@
 
         border-top: 4px solid #fff;
 
+
         @media #{$tablet} {
           right: 20px;
         }
@@ -213,27 +357,59 @@
     }
     &:hover {
         & span {
-            border-color: transparent;
+            border-color: #d22856;
+
             &::before,
             &::after {
-                border-color: crimson;
+                border-color: #d22856;
+
+                @media #{$mobile-tablet} {
+                    right: 0;
+                }
             }
+
+        }
+    }
+
+    &-active {
+
+      &:hover {
+        span {
+            border-color: transparent;
+        }
+      }
+
+        & span {
+            border-color: transparent;
+
             &::before {
                 top: 0;
-                right: 10px;
-
                 width: 30px;
-
                 transform: rotate(-45deg);
+                border-color: #d22856;
             }
+
             &::after {
                 top: 0;
-                right: 10px;
-
                 width: 30px;
-
                 transform: rotate(45deg);
+                border-color: #d22856;
+            }
+
+            &::before,
+            &::after {
+                border-color: #d22856;
+
+                @media #{$mobile-tablet} {
+                    right: 0;
+                }
+            }
+
+            @media #{$mobile} {
+              top: 26px;
+              transform: none;
             }
         }
+
     }
 }
