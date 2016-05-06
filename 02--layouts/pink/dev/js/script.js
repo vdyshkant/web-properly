@@ -5,7 +5,7 @@ function handleMenu(menu, toggler){
 		menu.classList.toggle("nav-list-active");
 		toggler.classList.toggle("btn-burger-active");
 	}
-	toggler.addEventListener('click', onToggleClick);
+	toggler.addEventListener("click", onToggleClick);
 
 	// если окно вьюпорта больше таблета - убираем toggle классы меню:
 	window.addEventListener("resize", function(){
@@ -24,4 +24,29 @@ function handleMenu(menu, toggler){
 	// invoking menu-toggler func:
 	handleMenu(navList, burger);
 
+})();
+
+
+// Smooth scrolling from menu
+(function() {
+  var links = document.querySelectorAll("a[href^='#']"),
+      i;
+
+  for (i = 0; i<links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+      var timer = 0,
+          attrName = this.getAttribute("href").slice(1),
+          currentPos = this.parentNode.parentNode.offsetTop + this.offsetTop,
+          stopPos = document.getElementById(attrName).offsetTop,
+          distance = stopPos - pageYOffset,
+          step = Math.round(distance / 50),
+          nextStep = 0;
+
+      event.preventDefault();
+      for (i = nextStep; i <= stopPos; i+=step) {
+        setTimeout(function(){ window.scrollTo(0, nextStep+=step); }, timer * 8);
+        timer++;
+      }
+    }, false);
+  }
 })();
