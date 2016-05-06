@@ -101,7 +101,7 @@
         height: 45px;
         border: 3px solid rgba(40,54,69,.1);
         border-radius: 50%;
-        transition: .3s;
+        transition: all .3s ease-in-out;
         margin-right: 12px;
 
         &:hover {
@@ -170,7 +170,7 @@
 
         position: absolute;
         fill: #d22856;
-        transition: .3s;
+        transition: all .3s ease-in-out;
 
         &-glukhanko {
           width: 25.988px;

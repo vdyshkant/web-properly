@@ -146,19 +146,11 @@
 
     &-list {
 
-      animation: appear .3s ease-out;
-
-      &-fade {
-        animation: disappear .3s ease-out;
-      }
+      // animation: appear .3s ease-out;
 
       @keyframes appear {
         from { margin-top: -300px; }
         to   { margin-top: 1px; }
-      }
-      @keyframes disappear {
-        from { margin-top: 1px; }
-        to   { margin-top: -300px; }
       }
 
       @media #{$mobile} {
@@ -279,7 +271,7 @@
         left: 50%;
         width: 0;
         background-color: #fff;
-        transition: all .3s;
+        transition: all .3s ease-in-out;
         opacity: 0;
       }
       &:hover {
@@ -326,7 +318,7 @@
 
         width: 50px;
 
-        transition: all 300ms;
+        transition: all .3s ease-in-out;
         transform: translateY(-50%);
 
         border-top: 4px solid #fff;
@@ -344,7 +336,7 @@
             width: 50px;
 
             content: "";
-            transition: all 300ms;
+            transition: all .3s ease-in-out;
 
             border-top: 4px solid #fff;
         }
