@@ -14,6 +14,8 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- bxSlider CSS file -->
+    <link href="lib/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
@@ -218,10 +220,10 @@
     </div>
 
 
-    <div class="reviews  box" id="reviews">
+
+<!-- <div class="reviews  box" id="reviews">
       <div class="wrap">
         <div class="outer">
-
           <input id="toggle-reviews-1" class="reviews-input" type="radio" name="reviews" checked>
           <input id="toggle-reviews-2" class="reviews-input" type="radio" name="reviews">
           <input id="toggle-reviews-3" class="reviews-input" type="radio" name="reviews">
@@ -271,13 +273,13 @@
             </blockquote>
           </div>
 
-          <!-- <div class="controls">
+          <div class="controls">
             <span class="button"></span>
             <span class="button  active"></span>
             <span class="button"></span>
           </div> -->
 
-          <div class="reviews-controls">
+          <!-- <div class="reviews-controls">
             <label for="toggle-reviews-1" class="reviews-toggle  reviews-toggle-1">Отзыв:1</label>
             <label for="toggle-reviews-2" class="reviews-toggle  reviews-toggle-2">Отзыв:2</label>
             <label for="toggle-reviews-3" class="reviews-toggle  reviews-toggle-3">Отзыв:3</label>
@@ -285,8 +287,76 @@
 
         </div>
       </div>
-    </div>
+    </div>  -->
 
+    <div class="reviews  box">
+      <div class="wrap">
+        <div class="outer">
+          <div class="content">
+
+          <ul class="bxslider">
+
+            <li>
+              <div class="item  reviews-item-1">
+                <blockquote class="comment">
+                  <p class="text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+                  <cite class="author">Николай Петров</cite>
+                  <div class="about-author">
+                    <span class="age">
+                      25 лет,
+                    </span>
+                    <span class="job">
+                      водитель трамвая
+                    </span>
+                  </div>
+                </blockquote>
+              </div>
+            </li>
+
+            <li>
+              <div class="item  reviews-item-2">
+                <blockquote class="comment">
+                  <p class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Обеспечивает большой предложения наш одна своего осталось города оксмокс свою, свое все языкового даль продолжил.</p>
+                  <cite class="author">Иван Сидоров</cite>
+                  <div class="about-author">
+                    <span class="age">
+                      95 лет,
+                    </span>
+                    <span class="job">
+                      электрик
+                    </span>
+                  </div>
+                </blockquote>
+              </div>
+            </li>
+
+            <li>
+              <div class="item  reviews-item-3">
+                <blockquote class="comment">
+                  <p class="text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его ведущими что вершину продолжил прямо бросил послушавшись снова текст это если!</p>
+                  <cite class="author">Петр Иванов</cite>
+                  <div class="about-author">
+                    <span class="age">
+                      18 лет,
+                    </span>
+                    <span class="job">
+                      дворник
+                    </span>
+                  </div>
+                </blockquote>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="outside">
+            <p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="prices  box-gray" id="prices">
       <div class="wrap">
@@ -461,8 +531,6 @@
   </div>
 
 
-
-
   <footer class="footer">
     <div class="wrap">
       <div class="row">
@@ -597,15 +665,26 @@
 
 </div>
 
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/script.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          speed: 500,
+          auto: true,
+          pause: 3000,
+          nextSelector: "#slider-next",
+          prevSelector: "#slider-prev",
+          nextText: "",
+          prevText: ""
+        });
+      });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

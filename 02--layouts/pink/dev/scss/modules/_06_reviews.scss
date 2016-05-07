@@ -1,6 +1,39 @@
 /* === Reviews module === */
 
+#slider-prev .bx-prev,
+#slider-next .bx-next{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    content: "";
+    top: 216px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(40,54,69,.3);
+    border-right: 2px solid rgba(40,54,69,.3);
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+
+    @media #{$desktop} {
+      display: block;
+    }
+  }
+
+#slider-prev .bx-prev {
+    // left: 5px;
+    left: 12%;
+    transform: rotate(135deg);
+}
+#slider-next .bx-next {
+    // right: 5px;
+    right: 12%;
+    transform: rotate(-45deg);
+}
+
 .reviews {
+
+    position: relative;
 
     @media #{$tablet} {
         padding-bottom: 13px;
@@ -14,11 +47,18 @@
     }
 
     .wrap {
-        padding: 0 20px;
+
+        @media #{$mobile} {
+          padding: 0 20px;
+        }
+
+        @media #{$tablet} {
+          padding: 0 40px;
+        }
 
         @media #{$desktop} {
-          padding: 0 130px;
-          max-width: 940px;
+          // padding: 0 130px;
+          // max-width: 940px;
           margin: 0 auto;
         }
     }
@@ -42,11 +82,16 @@
         }
     }
 
+    // .content {
+    //   max-width: 700px;
+    //   margin: 0 auto;
+    // }
+
     .item {
-        position: relative;
+        // position: relative;
         /* medaia: */
-        overflow: hidden;
-        display: none;
+        // overflow: hidden;
+        // display: none;
         transition: all .3s ease-in-out;
         //
     }
@@ -142,121 +187,96 @@
         }
     }
 
-    & input[type="radio"] {
-      display: none;
-    }
+    // & input[type="radio"] {
+    //   display: none;
+    // }
 
-    &-controls {
-        z-index: 999;
-        font: 0/0 a;
+    // &-controls {
+    //     z-index: 999;
+    //     font: 0/0 a;
+    //
+    //     margin-top: 33px;
+    //
+    //     text-align: center;
+    //
+    //     // outline: 1px dashed crimson;
+    //     // outline-offset: -1px;
+    //
+    //     @media #{$mobile} {
+    //       margin-top: 36px;
+    //     }
+    //
+    //     @media #{$tablet} {
+    //       margin-top: 34px;
+    //     }
+    //
+    //     @media #{$desktop} {
+    //       // display: none;
+    //     }
+    // }
 
-        margin-top: 33px;
+    // &-toggle {
+    //   font: 0/0 a;
+    //
+    //   display: inline-block;
+    //   margin-right: 15px;
+    //
+    //   cursor: pointer;
+    //   transition: all .3s ease-in-out;
+    //   vertical-align: top;
+    //
+    //   color: transparent;
+    //   border-radius: 50%;
+    //    //   @media #{$mobile-tablet} {
+    //       background: hsla(211,42%,27%,.3);
+    //       width: 6px;
+    //       height: 6px;
+    //   }
+    //
+    //   &:hover::before,
+    //   &:hover::after {
+    //     @media #{$desktop} {
+    //       border-bottom: 2px solid rgba(40,54,69,.7);
+    //       border-right: 2px solid rgba(40,54,69,.7);
+    //     }
+    //   }
+    //
+    //   &:last-child {
+    //       margin-right: 0;
+    //   }
+    //
+    //   &::before,
+    //   &::after {
+    //     @media #{$desktop} {
+    //       content: "";
+    //       position: absolute;
+    //       display: none;
+    //       top: 216px;
+    //       width: 30px;
+    //       height: 30px;
+    //       cursor: pointer;
+    //       border-bottom: 2px solid rgba(40,54,69,.3);
+    //       border-right: 2px solid rgba(40,54,69,.3);
+    //       background-color: transparent;
+    //       transition: all .2s ease-in-out;
+    //     }
+    //   }
+    //
+    //   &::before {
+    //     @media #{$desktop} {
+    //       left: 5px;
+    //       transform: rotate(135deg);
+    //     }
+    //   }
+    //
+    //   &::after {
+    //     @media #{$desktop} {
+    //       right: 5px;
+    //       transform: rotate(-45deg);
+    //     }
+    //   }
+    // }
 
-        text-align: center;
-
-        // outline: 1px dashed crimson;
-        // outline-offset: -1px;
-
-        @media #{$mobile} {
-          margin-top: 36px;
-        }
-
-        @media #{$tablet} {
-          margin-top: 34px;
-        }
-
-        @media #{$desktop} {
-          // display: none;
-        }
-    }
-
-    &-toggle {
-      font: 0/0 a;
-
-      display: inline-block;
-      margin-right: 15px;
-
-      cursor: pointer;
-      transition: all .3s ease-in-out;
-      vertical-align: top;
-
-      color: transparent;
-      border-radius: 50%;
-
-      @media #{$mobile-tablet} {
-          background: hsla(211,42%,27%,.3);
-          width: 6px;
-          height: 6px;
-      }
-
-      &:hover::before,
-      &:hover::after {
-        @media #{$desktop} {
-          border-bottom: 2px solid rgba(40,54,69,.7);
-          border-right: 2px solid rgba(40,54,69,.7);
-        }
-      }
-
-      &:last-child {
-          margin-right: 0;
-      }
-
-      &::before,
-      &::after {
-        @media #{$desktop} {
-          content: "";
-          position: absolute;
-          display: none;
-          top: 216px;
-          width: 30px;
-          height: 30px;
-          cursor: pointer;
-          border-bottom: 2px solid rgba(40,54,69,.3);
-          border-right: 2px solid rgba(40,54,69,.3);
-          background-color: transparent;
-          transition: all .2s ease-in-out;
-        }
-      }
-
-      &::before {
-        @media #{$desktop} {
-          left: 5px;
-          transform: rotate(135deg);
-        }
-      }
-
-      &::after {
-        @media #{$desktop} {
-          right: 5px;
-          transform: rotate(-45deg);
-        }
-      }
-    }
-
-
-    .button {
-        display: inline-block;
-
-        width: 6px;
-        height: 6px;
-        margin-right: 13px;
-
-        cursor: pointer;
-        vertical-align: top;
-
-        border: 3px solid #fff;
-        border-radius: 50%;
-        background: #bec2c7;
-
-        &.active {
-            border: 3px solid #283645;
-            background: #fff;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
 
     &.box::after {
       min-height: 25px;
@@ -266,28 +286,52 @@
 
 /* css slider */
 
-#toggle-reviews-1:checked ~ .reviews-controls label[for="toggle-reviews-1"],
-#toggle-reviews-2:checked ~ .reviews-controls label[for="toggle-reviews-2"],
-#toggle-reviews-3:checked ~ .reviews-controls label[for="toggle-reviews-3"] {
-    background: #fff;
-    @media #{$mobile-tablet} {
-        box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
-    }
-}
+// #toggle-reviews-1:checked ~ .reviews-controls label[for="toggle-reviews-1"],
+// #toggle-reviews-2:checked ~ .reviews-controls label[for="toggle-reviews-2"],
+// #toggle-reviews-3:checked ~ .reviews-controls label[for="toggle-reviews-3"] {
+//     background: #fff;
+//     @media #{$mobile-tablet} {
+//         box-shadow: 0 0 0 3px hsla(211,42%,27%,1);
+//     }
+// }
 
-#toggle-reviews-1:checked ~ .reviews-item-1,
-#toggle-reviews-2:checked ~ .reviews-item-2,
-#toggle-reviews-3:checked ~ .reviews-item-3 {
-    display: block;
-}
-
-.reviews-input:first-of-type:checked ~ .reviews-controls .reviews-toggle-3::before,
- .reviews-input:last-of-type:checked ~ .reviews-controls .reviews-toggle-1::after,
-.reviews-input[id=toggle-reviews-1]:checked ~ .reviews-controls .reviews-toggle-2::after,
-.reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-1::before,
-.reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-3::after,
-.reviews-input[id=toggle-reviews-3]:checked ~ .reviews-controls .reviews-toggle-2::before {
-    display: block;
-}
+// #toggle-reviews-1:checked ~ .reviews-item-1,
+// #toggle-reviews-2:checked ~ .reviews-item-2,
+// #toggle-reviews-3:checked ~ .reviews-item-3 {
+//     display: block;
+// }
+//
+// .reviews-input:first-of-type:checked ~ .reviews-controls .reviews-toggle-3::before,
+//  .reviews-input:last-of-type:checked ~ .reviews-controls .reviews-toggle-1::after,
+// .reviews-input[id=toggle-reviews-1]:checked ~ .reviews-controls .reviews-toggle-2::after,
+// .reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-1::before,
+// .reviews-input[id=toggle-reviews-2]:checked ~ .reviews-controls .reviews-toggle-3::after,
+// .reviews-input[id=toggle-reviews-3]:checked ~ .reviews-controls .reviews-toggle-2::before {
+//     display: block;
+// }
 
 /* eof css slider */
+
+.reviews .bx-wrapper .bx-pager.bx-default-pager a {
+   background: hsla(211,42%,27%,.3);
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   transition: all .3s ease-in-out;
+   margin-right: 15px;
+}
+
+.reviews .bx-wrapper .bx-pager.bx-default-pager a:hover {
+	background: hsla(211,42%,27%,.3);
+}
+
+.reviews .bx-wrapper .bx-pager.bx-default-pager a.active {
+	box-shadow: 0 0 0 3px #284462;
+	background: #fff;
+}
+
+@media #{$desktop} {
+  .bx-controls {
+    display: none;
+  }
+}
