@@ -8,6 +8,52 @@
 
 
 
+
+
+item kit.		// набор
+item set.		// комплект
+sequential 		// последовательный, являющийся продолжением
+willing to bet 	// готов поспорить
+jog 			// подталкивать, бегать трусцой
+collide 		// сталкиваться
+entirety		// цельность
+wrap 			// заворачивать
+woot // (especially in electronic communication) used to express elation, enthusiasm, or triumph. "I definitely get Fridays off, woot!"
+recap 					// резюмировать
+convenience 				// удобство
+To address this 			// для решения этой проблемы
+encompasses 				// охватывает, cause smth to take place
+That one will make its guest appearance in a little bit 		// он появится в виде как бы гостя на короткий промежуток времени.
+purpose 					// цель
+corresponding 				// соответствущий, have a close similarity
+corroborates 				// подкрепляет // confirm or give support to
+slid around 				// выпасть
+meaningful 					// значимый, выразительный
+To add that meaning 		// мб "кроме того значения"..
+tackle 						// снасти, инструмент, приспособление
+To start off 				// для того, чтобы начать
+Despite the quantity 		// несмотря на количество
+That has to do 	// это должно делать...
+something that very convincingly looks // то, что выглядит очень убедительно
+frothy // пенистый
+declare == объявлять (переменные);
+variable == переменная;
+to assign - присваивать;
+to define == определять (функции);
+definition == определение?;
+statement == команда;
+set - совокупность;
+calling - вызов (функции);
+invoking - передача управления (вызов ф-и);
+parameters - параметры (defining function);
+arguments - аргументы (вызов/call-inboke);
+parentheses - круглые скобки;
+period === dot;
+curly braces - фигурные скобки;
+semicolon - точка с запятой;
+square brackets === квадратные/угловые скобки.
+неинициализированная переменная == undefined;
+передача по значению == копирование, passed by value === pass-by-copy.
 Below 			// ниже
 But what you're probably really keen to do is write your own 	// но что вы вероятно действительно заинтересованы сделать, это написать свой собственный
 far less code 	// гораздо меньше кода
