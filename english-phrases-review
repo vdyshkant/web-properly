@@ -150,40 +150,40 @@ grand					// большой
 connected bubbles
 more of a spirograph than distinct
 intersections // пересечения
-likely
-is likely
-less exciting part
-purpose
+likely			//  вероятно
+is likely		// похоже, скорее всего
+less exciting part 		// менее захватывающая часть
+purpose 		// цель, назначение
 For the sake of simplicity
 the sections for Firefox-etc will merely familiarize you with the UI for each browser’s debugger and point out any differences.
 Before delving into the various debuggers
-the most common
-to catalog
-execute statements
-step through code
-you can halt the execution
+the most common 		// самый распространенный
+to catalog 				// в каталог/каталогизировать
+execute statements 		// выполнять операторы
+step through code 		// код пошагово
+you can halt the execution 		// вы можете остановить выполнение
 due to the lack of decent development tools
 is traditionally looked upon as a difficult language
 For your convenience, the following code listing highlights the key changes:
- a set of form fields
-more gracefully
-you can determine whether the error is based on user input
-to take over
-code that breaches
-character
-Back to the code at hand
-mark out
-defines
-a circumstance that is extraordinary and unpredictable
-occurs
-can be dealt with as you wish
-clause
-sort of exceptional circumstance
-determine
-intruders
-that relies
-problems may arise that you can do nothing about
-a syntax or logic error in sight
+ a set of form fields 		// набор полей формы
+more gracefully 			// более изящно
+you can determine whether the error is based on user input // вы можете определить, является ли ошибка следствием ввода пользователя
+to take over 		// взять на себя
+code that breaches 	// код, который пробивает брешь (нарушает..)
+character 	// персонаж/символ/знак
+Back to the code at hand 	// возврат к коду, который под рукой
+mark out 	// выделить
+defines 	// определяет
+a circumstance that is extraordinary and unpredictable 	// обстоятельство, которое является экстраординарным и непредстказуемым
+occurs 		// имеет место/происходит/возникает/встречается
+can be dealt with as you wish 		// могут быть рассмотрены/решены, как вы хотите
+clause 		// пункт
+sort of exceptional circumstance 		// своего рода, исключительное обстоятельство
+determine 		// определить
+intruders 		// злоумышленники/нарушители/вторгшиеся
+that relies 	// которая опирается/полагается
+problems may arise that you can do nothing about 	// могут возникнуть проблемы, с которыми вы будете бессильны/с которыи ничег оне сможете сделать
+a syntax or logic error in sight // синтаксическая или логическая ошибка на виду/в поле зрения
 dud data
 stating the obvious
 in the first place
