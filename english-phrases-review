@@ -184,92 +184,92 @@ intruders 		// злоумышленники/нарушители/вторгши�
 that relies 	// которая опирается/полагается
 problems may arise that you can do nothing about 	// могут возникнуть проблемы, с которыми вы будете бессильны/с которыи ничег оне сможете сделать
 a syntax or logic error in sight // синтаксическая или логическая ошибка на виду/в поле зрения
-dud data
-stating the obvious
-in the first place
-relying
-Conditions beyond your control can lead to errors
-keep the following points in mind
-It’s surprising how often this error crops up
-the error message this type of mistake causes can be misleading
-Spot it
-there’s a deliberate concatenation mistake
-deliberate
-straightforward
-Ordinarily
-will attempt to treat
-To perhaps confuse the issue
-we intended
-as such
-it’s supposed to be
-examine the following code
-worth checking
-embedded
-Hence
-Consider the following code:
-a deliberate mistake
-On first glance
-The third fault
-your only clue
-with that error cleared up
-in an oblique way
-consequence
-implicitly
-explicitly
-a briefer look
-to step through your code
-how you can cope with
-so that you won’t make them so often
-annoying typos
-in particular
-extra effort
-maintainable
-to obtain
+dud data 					// поддельные данные
+stating the Obvious 		// констатировал/отметил/заявил очевидное
+in the first place 			// в первую очередь
+relying 					// опираяст, полагаясь
+Conditions beyond your control can lead to errors 	// условия, которые вы не контролируете, могут привести к ошибкам/сбоям
+keep the following points in mind 		// имейте ввиду/учтите следующие моменты
+It’s surprising how often this error crops up 	// удивительно, как часто выплывает эта ошибка
+the error message this type of mistake causes can be misleading 	// сообщение об ошибке, вызванное этим типом ошибки, может вводить в заблуждение
+Spot it // обнаружить его
+there’s a deliberate concatenation mistake 	// есть/там намеренная ошибка в конкатенации
+deliberate 		// преднамеренный
+straightforward 	// простой/прямой
+Ordinarily 			// обычно
+will attempt to treat 	// будет пытаться обработать/лечить
+To perhaps confuse the issue // для того, чтобы, возможно, внести путаницу/запутать дело
+we intended 		// мы намеревались
+as such 			// как таковой
+it’s supposed to be 		// это должно быть
+examine the following code 		// расмотрим следующий код
+worth checking 				// стоит проверить
+embedded 				// встроенный
+Hence 					// следовательно
+Consider the following code: // рассмотрим следующий код
+a deliberate mistake 		// преднамеренная ошибка
+On first glance 			// на первый взгляд
+The third fault 			// третья ошибка
+your only clue 				// ваш единственный ключ (подсказка)
+with that error cleared up  // с этой ошибкой прояснили/выяснили.
+in an oblique way 		// косвенным образом/по наклонному пути
+consequence 			// следствие
+implicitly 				// косвенным образом/молчаливо/безусловно
+explicitly 				// недвусмысленно/точно/ясно
+a briefer look 			// краткий взгляд/кратко взгянуть
+to step through your code 		// пошагово пройтись по коду
+how you can cope with 		// как вы можете справиться с
+so that you won’t make them so often // так что вы не будете делать их очень часто
+annoying typos 		// досадные/раздражающие/надоедливые опечатки
+in particular 		// в частности/особенно
+extra effort 		// дополнительные усилия
+maintainable 		// ремонтопригодны; поддающиеся обслуживанию
+to obtain 			// чтобы получить/для получения
 provides  // предоставляет, обеспечивает
-native reference types
-vital
-Frankly, it’s a question you don’t have to worry about at this point in time. It’s more important to know how to create objects than using the correct approach.
-instance data
-—they’re shared
-to assume
-efficient
-provide
-absence
-instances
-objects discussed thus far in this chapter
-to point out
-provide
-interchangeably
-distinction
-definition
-an actual
-custom
-plain objects
-You somewhat did this
-you need to provide blueprints
-how it should be laid out
-your own specification, to fit your specific needs
-you can just move on in
-you may want to move on
-absence
-colon
-enclose
-Admittedly
-defining the entire object
-to use in place
-in and of themselves
-except
-accidentally misspell
-drawbacks
-issue
-in conjunction
-unwieldy
-time boundary
-whether this is
-The date of the month
-As you will have guessed
-the number that precedes it
-so no adjustment is needed
+native reference types 		// нативные ссылочные типы
+vital 		// жизненно важно/необходимо
+Frankly, it’s a question you don’t have to worry about at this point in time. It’s more important to know how to create objects than using the correct approach.// Откровенно говоря, вам не стоит беспокоитсья по этому вопросу, в данный момомент времени/в данное время. Более важно знать, как создавать объекты, чем использование правильного подхода.
+instance data 		// данные экземпляра
+—they’re shared 	// они общие/совместны/ими поделились
+to assume 			// предположить
+efficient 			// эффективный
+provide 			// предоставлять
+absence 			// отсутствие
+instances 			// экземпляры
+objects discussed thus far in this chapter 		// объекты, которые до сих пор рассматривались в этой главе
+to point out 		// указать на то/отметить
+provide 			// предоставлять
+interchangeably 	// взаимозаменяемые
+distinction 		// различие
+definition 			// определение
+an actual 			// фактическое
+custom 					// изготовленный на заказ
+plain objects 			// простые объекты
+You somewhat did this 	// вы сделали немного/несколько/до некоторой степени
+you need to provide blueprints		// вам необходимо предоставить чертежи
+how it should be laid out 			// как он должен быть проложен/выложен
+your own specification, to fit your specific needs 	// ваши собственные спецификации/параметры, чтобы соответствовать вашим конкретным потребностям
+you can just move on in 	// вы можете просто двигаться дальше
+you may want to move on 	// вы можете/вам может хотеться двигаться дальше
+absence 		// отсутствие
+colon 			// двоеточие
+enclose 		// заключать
+Admittedly 		// по общему признанию/надо сказать/признать
+defining the entire object 		// определяющий/определяя весь объект (целиком)
+to use in place 		// использовать вместо
+in and of themselves 	// (и) сами по себе
+except 		// кроме
+accidentally misspell 		// случайная опечатка/ошибка/неправильно
+drawbacks 		// недостатки
+issue 			// вопрос/проблема
+in conjunction 		// вместе/в связи/в комбинации
+unwieldy 			// громоздкий
+time boundary 		// граница времени
+whether this is 	// является ли это
+The date of the month 		// дата месяца
+As you will have guessed 	// как вы уже догадались
+the number that precedes it 	// число, которое предшествует
+so no adjustment is needed 		// поэтому настройка/корректировка не требуется
 populate it
 for convenience
 It’s unlikely
